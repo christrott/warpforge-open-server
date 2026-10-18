@@ -1,0 +1,79 @@
+{
+  "SharedData": {},
+  "RawEvents": [
+    {
+      "Data": {
+        "$type": "DailyMissionData, Assembly-CSharp",
+        "eventId": "Daily_Login_0",
+        "enabled": true,
+        "activationType": 0,
+        "dates": {
+          "startDate": 0,
+          "endDate": 4102444800000,
+          "previewable": false,
+          "previewDate": 0,
+          "expirable": false,
+          "expireDate": 4102444800000,
+          "eventStages": []
+        },
+        "filter": {
+          "army": 0,
+          "expansion": 0,
+          "hasDuration": false,
+          "eventDuration": 0,
+          "hasCooldown": false,
+          "eventCooldown": 0,
+          "eventGroups": []
+        },
+        "priority": 0,
+        "showInMainMenu": false,
+        "location": {
+          "type": 1
+        },
+        "drawData": {
+          "EventAssets": [],
+          "EventComponents": [],
+          "EventLabels": []
+        },
+        "challenges": [],
+        "challengeLists": [],
+        "missionType": 1,
+        "maxActiveCount": 1,
+        "maxStoredRefill": 0,
+        "refreshTime": 86400000,
+        "autoReset": true,
+        "preventComplete": false,
+        "repeatable": true,
+        "keepOrder": false
+      },
+      "Persistence": {
+        "$type": "MissionPersistence, Assembly-CSharp",
+        "eventId": "Daily_Login_0",
+        "IsNew": false,
+        "WasSeen": true,
+        "IsActive": true,
+        "triggerTime": 0,
+        "expiredTime": 0,
+        "lastRefillUpdate": 0,
+        "availableRefills": 0,
+        "nextRefresh": 4102444800000,
+        "completedChallenges": {},
+        "challengeProgress": [
+          {
+            "collectedRewards": 0,
+            "premiumCollectedRewards": 0,
+            "resetProgress": false,
+            "entryId": "Daily_Login_0_DailyLogin",
+            "challengeId": "DailyLogin",
+            "currentValue": 0,
+            "difficulty": 1,
+            "canCollect": false,
+            "willEndAt": 4102444800000,
+            "completedAt": 0,
+            "startedAt": 0
+          }
+        ]
+      }
+    }
+  ]
+}

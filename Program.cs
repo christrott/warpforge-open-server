@@ -126,6 +126,39 @@ app.MapGet("/client_api/{**rest}", async (HttpContext ctx) =>
     await ctx.Response.SendFileAsync(file);
 });
 
+// Third-party services Everguild still runs (Firebase, Unity Gaming Services). The plugin rewrites
+// https://<host>/<path> to /_thirdparty/<host>/<path> so the game never reaches them. Answers are
+// the ones the game already copes with: Remote Config gets the values it last served, analytics is
+// accepted and dropped, everything else is refused.
+app.Map("/_thirdparty/{host}/{**rest}", async (HttpContext ctx, string host, string? rest) =>
+{
+    var body = await ReadBody(ctx.Request);
+    var status = 200;
+    string? json = null;
+    if (host == "config.services.api.unity.com")
+        // data/thirdparty/remoteconfig.json overrides the recorded values
+        json = Canned("thirdparty", "remoteconfig")?.ToJsonString() ??
+               """{"configs":{"settings":{"EnableTroopVOs":true,"EnableWarlordVOs":true}},"metadata":{"configAssignmentHash":"756cbbbe90e7ec2b1bd4c70a7734322b6fbd8f1b","assignmentId":"33f4c8af-ed51-40a7-a126-935548c4495f","environmentId":"d63d72d8-5c00-475c-86db-0f32030236a0"}}""";
+    else if (host.EndsWith("analytics.unity3d.com") || host.EndsWith("cloud.unity3d.com"))
+        status = 204;
+    else if (host.EndsWith("firebaseio.com"))
+        (status, json) = (401, """{"error":"Permission denied"}""");
+    else if (host.EndsWith("googleapis.com"))
+        (status, json) = (400, """{"error":{"code":400,"message":"OPERATION_NOT_ALLOWED","errors":[{"message":"OPERATION_NOT_ALLOWED","domain":"global","reason":"invalid"}]}}""");
+    else
+        (status, json) = (400, """{"detail":"blocked by WarpforgeOpenServer","details":[],"status":400,"title":"INVALID_PARAMETERS"}""");
+
+    // Analytics posts a batch every minute; keep it to one line
+    var detail = status == 204 ? $"({body.Length} bytes)" : Shorten(body);
+    Log($"3rd {ctx.Request.Method} {host}/{rest} {detail} -> {status}", ConsoleColor.DarkGray);
+    ctx.Response.StatusCode = status;
+    if (json != null)
+    {
+        ctx.Response.ContentType = "application/json";
+        await ctx.Response.WriteAsync(json);
+    }
+});
+
 // Anything that isn't POST /<Api>/<Method>
 app.MapFallback(async ctx =>
 {

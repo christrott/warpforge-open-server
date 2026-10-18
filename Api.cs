@@ -326,6 +326,8 @@ public class Api
         // AchievementPersistence[]
         "UpdatePooledAchievements" => new JsonArray(),
         "GrantStarterDeck" => GrantStarterDeck(parameter?["Data"] as JsonObject),
+        "CollectFirstNodeFix" => CollectFirstNodeFix(parameter?["Data"] as JsonObject),
+        "CollectCampaignRewards" => CollectCampaignRewards(parameter?["Data"] as JsonObject),
         "UpdateAchievement" => UpdateAchievement(parameter?["Data"] as JsonObject),
         "updatePlayerDecks" => UpdatePlayerDecks(parameter?["Data"] as JsonObject),
         "SetGamemodeDefaultDeck" => SetEventSave((string?)parameter?["Data"]?["eventId"], "defaultDeckId", parameter?["Data"]?["deckId"]),
@@ -345,29 +347,112 @@ public class Api
     };
 
     // GrantStarterDeckResult { rewards, army, deck, extraRewards }. The deck reward references the
-    // prebuilt deck by id; the client resolves it (and its card list) from its own asset library
+    // prebuilt deck by id; the client resolves it (and its card list) from its own asset library.
+    // The starter deck is the campaign's first node, so that node counts as collected
     JsonNode GrantStarterDeck(JsonObject? data)
     {
         var deckId = (string?)data?["starterDeckId"] ?? "";
         var eventId = (string?)data?["eventID"] ?? "";
-        var army = Armies.GetValueOrDefault(eventId.Replace("campaign_", ""), 0);
 
         _store.Player["StarterDeck"] = deckId;
-        _store.Player["SelectedArmy"] = army;
-        _store.Save();
-
-        return new JsonObject
-        {
-            ["rewards"] = new JsonArray(),
-            ["army"] = army,
-            ["deck"] = new JsonObject
-            {
-                ["item"] = new JsonObject { ["targetId"] = deckId },
-                ["quantity"] = 1,
-            },
-            ["extraRewards"] = new JsonArray(),
-        };
+        _store.Player["SelectedArmy"] = Armies.GetValueOrDefault(eventId.Replace("campaign_", ""), 0);
+        CollectCampaignNode(eventId, FirstCampaignNode(eventId));
+        return StarterDeckResult(eventId, deckId);
     }
+
+    // { eventID, nodeId }: the client found the starter deck granted but the campaign's first node
+    // not collected, and asks for it to be marked. Returns a GrantStarterDeckResult
+    JsonNode CollectFirstNodeFix(JsonObject? data)
+    {
+        var eventId = (string?)data?["eventID"] ?? "";
+        CollectCampaignNode(eventId, (string?)data?["nodeId"] ?? FirstCampaignNode(eventId));
+        return StarterDeckResult(eventId, (string?)_store.Player["StarterDeck"] ?? "");
+    }
+
+    // { eventID, nodeId, rewardTier } -> CollectedCampaignRewardsResult { Rewards, Result }. The client then
+    // updates its own CampaignPersistence; mirror it here: mark the node and pay its cost, from the army's
+    // points first and the rest from the shared neutral points. Rewards are empty for now: most node
+    // rewards (packs, wildcards, drop tables) live in shop/wildcard configs the server doesn't send yet
+    JsonNode CollectCampaignRewards(JsonObject? data)
+    {
+        var eventId = (string?)data?["eventID"] ?? "";
+        var nodeId = (string?)data?["nodeId"];
+        var premium = (int?)data?["rewardTier"] == 10;  // RewardTier premium
+        var node = CampaignNode(eventId, nodeId);
+        if (node == null)
+            return new JsonObject { ["Rewards"] = new JsonArray(), ["Result"] = false };
+
+        if (premium)
+            AddToEventSaveList(eventId, "PremiumNodesCollected", nodeId!);
+        else
+        {
+            var cost = (int?)node["NodeCost"] ?? 0;
+            var save = EventSave(eventId);
+            var total = (int?)save["TotalPoints"] ?? 0;
+            var used = (int?)save["UsedPoints"] ?? 0;
+            var fromArmy = Math.Clamp(total - used, 0, cost);
+            save["UsedPoints"] = used + fromArmy;
+            if (cost > fromArmy)
+            {
+                var shared = _store.Section("SharedData");
+                if (shared["Campaign"] is not JsonObject campaign)
+                    shared["Campaign"] = campaign = new JsonObject();
+                var neutral = (int?)campaign["neutralPoints"] ?? StartingCampaignPoints;
+                campaign["neutralPoints"] = Math.Max(0, neutral - (cost - fromArmy));
+            }
+            AddToEventSaveList(eventId, "NodesCollected", nodeId!);
+        }
+        return new JsonObject { ["Rewards"] = new JsonArray(), ["Result"] = true };
+    }
+
+    static JsonNode StarterDeckResult(string eventId, string deckId) => new JsonObject
+    {
+        ["rewards"] = new JsonArray(),
+        ["army"] = Armies.GetValueOrDefault(eventId.Replace("campaign_", ""), 0),
+        ["deck"] = new JsonObject
+        {
+            ["item"] = new JsonObject { ["targetId"] = deckId },
+            ["quantity"] = 1,
+        },
+        ["extraRewards"] = new JsonArray(),
+    };
+
+    // CampaignPersistence.NodesCollected lives in the player's event save for the campaign
+    void CollectCampaignNode(string eventId, string? nodeId)
+    {
+        if (string.IsNullOrEmpty(eventId) || string.IsNullOrEmpty(nodeId)) return;
+        AddToEventSaveList(eventId, "NodesCollected", nodeId);
+    }
+
+    JsonObject EventSave(string eventId)
+    {
+        var saves = _store.Section("EventSaves");
+        if (saves[eventId] is not JsonObject save)
+            saves[eventId] = save = new JsonObject();
+        return save;
+    }
+
+    void AddToEventSaveList(string eventId, string field, string value)
+    {
+        var save = EventSave(eventId);
+        if (save[field] is not JsonArray list)
+            save[field] = list = new JsonArray();
+        if (!list.Any(n => (string?)n == value)) list.Add(JsonValue.Create(value));
+        _store.Save();
+    }
+
+    // A campaign event's node (or its first) in data/liveops/Campaign.json
+    JsonObject? CampaignNode(string eventId, string? nodeId)
+    {
+        var path = Path.Combine(_store.DataDir, "liveops", "Campaign.json");
+        if (!File.Exists(path)) return null;
+        var events = JsonNode.Parse(File.ReadAllText(path))?["RawEvents"] as JsonArray;
+        var campaign = events?.FirstOrDefault(e => (string?)e?["Data"]?["eventId"] == eventId);
+        var nodes = campaign?["Data"]?["Nodes"] as JsonArray;
+        return (nodeId == null ? nodes?.FirstOrDefault() : nodes?.FirstOrDefault(n => (string?)n?["NodeId"] == nodeId)) as JsonObject;
+    }
+
+    string? FirstCampaignNode(string eventId) => (string?)CampaignNode(eventId, null)?["NodeId"];
 
     // AchievementPersistence for { Id, TotalPoints }; progress kept in player.json
     JsonNode UpdateAchievement(JsonObject? data)
@@ -509,7 +594,7 @@ public class Api
         if (string.IsNullOrEmpty(tag)) return null;
         if (_store.Player["Tags"] is not JsonArray tags)
             _store.Player["Tags"] = tags = new JsonArray();
-        if (!tags.Any(t => (string?)t == tag)) tags.Add(tag);
+        if (!tags.Any(t => (string?)t == tag)) tags.Add(JsonValue.Create(tag));
         _store.Save();
         return null;
     }
@@ -540,10 +625,23 @@ public class Api
                         (string?)persistence["eventId"] is { } eventId && saves[eventId] is JsonObject save)
                         foreach (var (k, v) in save)
                             persistence[k] = v?.DeepClone();
+
+            // ...and for each handler's SharedData (e.g. Campaign's neutralPoints)
+            if (handler["SharedData"] is not JsonObject shared)
+                handler["SharedData"] = shared = new JsonObject();
+            if (key == "Campaign" && shared["neutralPoints"] is null)
+                shared["neutralPoints"] = StartingCampaignPoints;
+            if (_store.Section("SharedData")[key] is JsonObject savedShared)
+                foreach (var (k, v) in savedShared)
+                    shared[k] = v?.DeepClone();
             result[key] = handler;
         }
         return result;
     }
+
+    // Campaign points any army's nodes can spend (CampaignHandler.NeutralPoints). Players earned them from
+    // matches, which don't award any here yet; GUESS: enough for the tutorial's second node (UM1 costs 200)
+    const int StartingCampaignPoints = 200;
 
     // CloudScript functions are the game's custom server logic. Until we know what each one should
     // return, a canned result can be dropped in data/cloudscript/<FunctionName>.json

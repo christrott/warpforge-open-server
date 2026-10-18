@@ -3,16 +3,16 @@
   "DisplayName": "Commander",
   "SteamId": "0",
   "Created": "2026-10-18T05:51:12.112Z",
-  "DataVersion": 13,
+  "DataVersion": 17,
   "UserData": {
     "TutorialV2": {
-      "Value": "{\u0022stages\u0022:[{\u0022stageId\u0022:\u0022SelectArmy\u0022,\u0022isCompleted\u0022:true},{\u0022stageId\u0022:\u0022PlayRanked\u0022,\u0022isCompleted\u0022:true},{\u0022stageId\u0022:\u0022GetMission\u0022,\u0022isCompleted\u0022:true}]}",
-      "LastUpdated": "2026-10-18T09:50:45.222Z",
+      "Value": "{\u0022stages\u0022:[{\u0022stageId\u0022:\u0022SelectArmy\u0022,\u0022isCompleted\u0022:true},{\u0022stageId\u0022:\u0022PlayRanked\u0022,\u0022isCompleted\u0022:true},{\u0022stageId\u0022:\u0022GetMission\u0022,\u0022isCompleted\u0022:true},{\u0022stageId\u0022:\u0022GetCampaignFirstNode\u0022,\u0022isCompleted\u0022:true},{\u0022stageId\u0022:\u0022TutorialFinished\u0022,\u0022isCompleted\u0022:true}]}",
+      "LastUpdated": "2026-10-18T12:41:03.079Z",
       "Permission": "Private"
     },
     "DemoData": {
-      "Value": "{\u0022tutorialsCompleted\u0022:{},\u0022gameAfterTutorialPlayed\u0022:true,\u0022suscriptionPopupShowed\u0022:false,\u0022suscribed\u0022:false,\u0022currentDeck\u0022:\u0022UM_SK_1_2\u0022,\u0022canEnterDraftMode\u0022:true,\u0022feedbackSeen\u0022:false,\u0022feedbackSent\u0022:false}",
-      "LastUpdated": "2026-10-18T09:50:36.789Z",
+      "Value": "{\u0022tutorialsCompleted\u0022:{},\u0022gameAfterTutorialPlayed\u0022:true,\u0022suscriptionPopupShowed\u0022:false,\u0022suscribed\u0022:false,\u0022currentDeck\u0022:\u0022UMDeck1\u0022,\u0022canEnterDraftMode\u0022:true,\u0022feedbackSeen\u0022:false,\u0022feedbackSent\u0022:false}",
+      "LastUpdated": "2026-10-18T12:44:14.617Z",
       "Permission": "Private"
     }
   },
@@ -26,7 +26,7 @@
   "Inventory": [],
   "Statistics": {},
   "LastSteamTicketLength": 468,
-  "LastLogin": "2026-10-18T09:47:48.569Z",
+  "LastLogin": "2026-10-18T12:40:42.709Z",
   "EntityObjects": {},
   "StarterDeck": "UM_SK_Starter",
   "SelectedArmy": 10,
@@ -41,9 +41,17 @@
       "resetProgress": false
     }
   },
-  "EventSaves": {},
+  "EventSaves": {
+    "campaign_Ultramarines": {
+      "NodesCollected": [
+        "UM0",
+        "UM1"
+      ],
+      "UsedPoints": 0
+    }
+  },
   "VictoryCounters": {
-    "PracticeEvent_won": 1
+    "PracticeEvent_won": 2
   },
   "BattleLog": [
     {
@@ -70,6 +78,39 @@
       "playerClan": "",
       "enemyClan": "",
       "botAltid": ""
+    },
+    {
+      "season": 1,
+      "enemyId": "AI",
+      "matchWin": true,
+      "matchLose": false,
+      "ownExp": 0,
+      "enemyExp": 0,
+      "ownTotalExp": 0,
+      "enemyTotalExp": 0,
+      "ownGlobalRating": 1000,
+      "enemyGlobalRating": 1000,
+      "ownHeroName": "UM47",
+      "enemyHeroName": "GOF29",
+      "ownName": "Commander",
+      "enemyName": "Grukk Face-Rippa",
+      "ownSkulls": 3,
+      "enemySkulls": 2,
+      "recordingIndex": "",
+      "matchType": 6,
+      "replaysVersion": "1.35.0",
+      "pinned": false,
+      "playerClan": "",
+      "enemyClan": "",
+      "botAltid": ""
     }
+  ],
+  "SharedData": {
+    "Campaign": {
+      "neutralPoints": 0
+    }
+  },
+  "Tags": [
+    "FinishedFTUETutorial"
   ]
 }

@@ -38,14 +38,1378 @@
         "PointsPerLevel": 1,
         "Nodes": [
           {
-            "NodeId": "campaign_Ultramarines_node0",
-            "NodeCost": 0,
-            "Rewards": [],
+            "NodeId": "UM0",
+            "NodeCost": 100,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "UM_SK_Starter"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines R4"
+                },
+                "quantity": 1,
+                "rewardTier": 10
+              }
+            ],
             "UnlockedBy": [],
+            "Unlocks": [
+              "UM1",
+              "UM2"
+            ],
+            "Position": {
+              "x": -8.0,
+              "y": -8.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM1",
+            "NodeCost": 200,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "Booster Pack Ultramarines"
+                },
+                "quantity": 1
+              }
+            ],
+            "UnlockedBy": [
+              "UM0"
+            ],
+            "Unlocks": [
+              "UM3",
+              "UM4"
+            ],
+            "Position": {
+              "x": 312.0,
+              "y": -136.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM2",
+            "NodeCost": 200,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "WildcardUltramarines2"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 3
+              }
+            ],
+            "UnlockedBy": [
+              "UM0"
+            ],
+            "Unlocks": [
+              "UM5",
+              "UM6"
+            ],
+            "Position": {
+              "x": 312.0,
+              "y": 120.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM3",
+            "NodeCost": 300,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "Booster Pack Ultramarines"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "WildcardUltramarines3"
+                },
+                "quantity": 1,
+                "rewardTier": 10
+              }
+            ],
+            "UnlockedBy": [
+              "UM1"
+            ],
+            "Unlocks": [
+              "UM7"
+            ],
+            "Position": {
+              "x": 632.0,
+              "y": -392.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM4",
+            "NodeCost": 300,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "WildcardUltramarines2"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 3
+              },
+              {
+                "item": {
+                  "targetId": "Booster Pack Ultramarines"
+                },
+                "quantity": 1,
+                "rewardTier": 10
+              }
+            ],
+            "UnlockedBy": [
+              "UM1"
+            ],
+            "Unlocks": [
+              "UM8"
+            ],
+            "Position": {
+              "x": 632.0,
+              "y": -136.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM5",
+            "NodeCost": 300,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "C2"
+                },
+                "quantity": 400
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 3
+              },
+              {
+                "item": {
+                  "targetId": "Booster Pack Ultramarines"
+                },
+                "quantity": 1,
+                "rewardTier": 10
+              }
+            ],
+            "UnlockedBy": [
+              "UM2"
+            ],
+            "Unlocks": [
+              "UM9"
+            ],
+            "Position": {
+              "x": 632.0,
+              "y": 120.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM6",
+            "NodeCost": 300,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "Booster Pack Ultramarines"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "C2"
+                },
+                "quantity": 400,
+                "rewardTier": 10
+              }
+            ],
+            "UnlockedBy": [
+              "UM2"
+            ],
+            "Unlocks": [
+              "UM10"
+            ],
+            "Position": {
+              "x": 632.0,
+              "y": 376.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM7",
+            "NodeCost": 400,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "UM34"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 4
+              }
+            ],
+            "UnlockedBy": [
+              "UM3"
+            ],
+            "Unlocks": [
+              "UM11"
+            ],
+            "Position": {
+              "x": 952.0,
+              "y": -392.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM8",
+            "NodeCost": 400,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "UM2"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 4
+              }
+            ],
+            "UnlockedBy": [
+              "UM4"
+            ],
+            "Unlocks": [
+              "UM11"
+            ],
+            "Position": {
+              "x": 952.0,
+              "y": -136.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM9",
+            "NodeCost": 400,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "UM3"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 4
+              }
+            ],
+            "UnlockedBy": [
+              "UM5"
+            ],
+            "Unlocks": [
+              "UM12"
+            ],
+            "Position": {
+              "x": 952.0,
+              "y": 120.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM10",
+            "NodeCost": 400,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "UM27"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 4
+              }
+            ],
+            "UnlockedBy": [
+              "UM6"
+            ],
+            "Unlocks": [
+              "UM12"
+            ],
+            "Position": {
+              "x": 952.0,
+              "y": 376.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM11",
+            "NodeCost": 500,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "Booster Pack Ultramarines"
+                },
+                "quantity": 1
+              }
+            ],
+            "UnlockedBy": [
+              "UM7",
+              "UM8"
+            ],
+            "Unlocks": [
+              "UM13"
+            ],
+            "Position": {
+              "x": 1272.0,
+              "y": -136.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM12",
+            "NodeCost": 500,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "C2"
+                },
+                "quantity": 400
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 3
+              }
+            ],
+            "UnlockedBy": [
+              "UM10",
+              "UM9"
+            ],
+            "Unlocks": [
+              "UM13"
+            ],
+            "Position": {
+              "x": 1272.0,
+              "y": 120.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM13",
+            "NodeCost": 500,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "643ee10a8aeb99a4990e3bb9a2a0faf8"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 4
+              },
+              {
+                "item": {
+                  "targetId": "c79939c3d8c97438980edf66e212c412"
+                },
+                "quantity": 1,
+                "rewardTier": 10
+              }
+            ],
+            "UnlockedBy": [
+              "UM11",
+              "UM12"
+            ],
+            "Unlocks": [
+              "UM15",
+              "UM16"
+            ],
+            "Position": {
+              "x": 1592.0,
+              "y": -8.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM15",
+            "NodeCost": 500,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "UM39"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 4
+              }
+            ],
+            "UnlockedBy": [
+              "UM13"
+            ],
+            "Unlocks": [
+              "UM17"
+            ],
+            "Position": {
+              "x": 1912.0,
+              "y": -136.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM16",
+            "NodeCost": 500,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "UM8"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 4
+              }
+            ],
+            "UnlockedBy": [
+              "UM13"
+            ],
+            "Unlocks": [
+              "UM18",
+              "UM19"
+            ],
+            "Position": {
+              "x": 1912.0,
+              "y": 120.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM17",
+            "NodeCost": 500,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "Booster Pack Ultramarines"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "Booster Pack Ultramarines"
+                },
+                "quantity": 1,
+                "rewardTier": 10
+              }
+            ],
+            "UnlockedBy": [
+              "UM15"
+            ],
+            "Unlocks": [
+              "UM20"
+            ],
+            "Position": {
+              "x": 2232.0,
+              "y": -264.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM18",
+            "NodeCost": 500,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "WildcardUltramarines1"
+                },
+                "quantity": 3
+              },
+              {
+                "item": {
+                  "targetId": "WildcardUltramarines2"
+                },
+                "quantity": 1,
+                "rewardTier": 10
+              }
+            ],
+            "UnlockedBy": [
+              "UM16"
+            ],
+            "Unlocks": [
+              "UM21"
+            ],
+            "Position": {
+              "x": 2232.0,
+              "y": -8.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM19",
+            "NodeCost": 500,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "Booster Pack Ultramarines"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "Booster Pack Ultramarines"
+                },
+                "quantity": 1,
+                "rewardTier": 10
+              }
+            ],
+            "UnlockedBy": [
+              "UM16"
+            ],
+            "Unlocks": [
+              "UM22"
+            ],
+            "Position": {
+              "x": 2232.0,
+              "y": 248.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM20",
+            "NodeCost": 600,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "UM13"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 4
+              }
+            ],
+            "UnlockedBy": [
+              "UM17"
+            ],
+            "Unlocks": [
+              "UM23"
+            ],
+            "Position": {
+              "x": 2552.0,
+              "y": -264.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM21",
+            "NodeCost": 600,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "UM17"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 4
+              }
+            ],
+            "UnlockedBy": [
+              "UM18"
+            ],
+            "Unlocks": [
+              "UM23"
+            ],
+            "Position": {
+              "x": 2552.0,
+              "y": -8.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM22",
+            "NodeCost": 600,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "C2"
+                },
+                "quantity": 500
+              }
+            ],
+            "UnlockedBy": [
+              "UM19"
+            ],
+            "Unlocks": [
+              "UM24"
+            ],
+            "Position": {
+              "x": 2552.0,
+              "y": 248.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM23",
+            "NodeCost": 700,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "Booster Pack Ultramarines"
+                },
+                "quantity": 1
+              }
+            ],
+            "UnlockedBy": [
+              "UM20",
+              "UM21"
+            ],
+            "Unlocks": [
+              "UM25"
+            ],
+            "Position": {
+              "x": 2872.0,
+              "y": -136.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM24",
+            "NodeCost": 700,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "UM24"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 4
+              }
+            ],
+            "UnlockedBy": [
+              "UM22"
+            ],
+            "Unlocks": [
+              "UM25"
+            ],
+            "Position": {
+              "x": 2872.0,
+              "y": 248.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM25",
+            "NodeCost": 800,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "d139f53f941ce40f88bd07adf20c08ad"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 4
+              },
+              {
+                "item": {
+                  "targetId": "WildcardUltramarines3"
+                },
+                "quantity": 1,
+                "rewardTier": 10
+              }
+            ],
+            "UnlockedBy": [
+              "UM23",
+              "UM24"
+            ],
+            "Unlocks": [
+              "UM26",
+              "UM27",
+              "UM28"
+            ],
+            "Position": {
+              "x": 3192.0,
+              "y": -8.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM26",
+            "NodeCost": 900,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "UM44"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 4
+              }
+            ],
+            "UnlockedBy": [
+              "UM25"
+            ],
+            "Unlocks": [
+              "UM29"
+            ],
+            "Position": {
+              "x": 3512.0,
+              "y": -264.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM27",
+            "NodeCost": 900,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "UM22"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 4
+              }
+            ],
+            "UnlockedBy": [
+              "UM25"
+            ],
+            "Unlocks": [
+              "UM29"
+            ],
+            "Position": {
+              "x": 3512.0,
+              "y": -8.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM28",
+            "NodeCost": 900,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "C2"
+                },
+                "quantity": 500
+              }
+            ],
+            "UnlockedBy": [
+              "UM25"
+            ],
+            "Unlocks": [
+              "UM30"
+            ],
+            "Position": {
+              "x": 3512.0,
+              "y": 248.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM29",
+            "NodeCost": 1000,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "C2"
+                },
+                "quantity": 500
+              },
+              {
+                "item": {
+                  "targetId": "C2"
+                },
+                "quantity": 500,
+                "rewardTier": 10
+              }
+            ],
+            "UnlockedBy": [
+              "UM26",
+              "UM27"
+            ],
+            "Unlocks": [
+              "UM31"
+            ],
+            "Position": {
+              "x": 3832.0,
+              "y": -264.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM30",
+            "NodeCost": 1000,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "Booster Pack Ultramarines"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "Booster Pack Ultramarines"
+                },
+                "quantity": 1,
+                "rewardTier": 10
+              }
+            ],
+            "UnlockedBy": [
+              "UM28"
+            ],
+            "Unlocks": [
+              "UM32",
+              "UM33"
+            ],
+            "Position": {
+              "x": 3832.0,
+              "y": 248.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM31",
+            "NodeCost": 1000,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "UM55"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 4
+              }
+            ],
+            "UnlockedBy": [
+              "UM29"
+            ],
+            "Unlocks": [
+              "UM34"
+            ],
+            "Position": {
+              "x": 4152.0,
+              "y": -264.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM32",
+            "NodeCost": 1000,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "UM28"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 4
+              }
+            ],
+            "UnlockedBy": [
+              "UM30"
+            ],
+            "Unlocks": [
+              "UM34"
+            ],
+            "Position": {
+              "x": 4152.0,
+              "y": -8.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM33",
+            "NodeCost": 1000,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "WildcardUltramarines1"
+                },
+                "quantity": 3
+              }
+            ],
+            "UnlockedBy": [
+              "UM30"
+            ],
+            "Unlocks": [
+              "UM34"
+            ],
+            "Position": {
+              "x": 4152.0,
+              "y": 248.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM34",
+            "NodeCost": 1000,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "10a1e3f4c77c0491196b655ad4d7d72d"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 4
+              },
+              {
+                "item": {
+                  "targetId": "WildcardUltramarines3"
+                },
+                "quantity": 1,
+                "rewardTier": 10
+              }
+            ],
+            "UnlockedBy": [
+              "UM31",
+              "UM32",
+              "UM33"
+            ],
+            "Unlocks": [
+              "UM35",
+              "UM36",
+              "UM37"
+            ],
+            "Position": {
+              "x": 4472.0,
+              "y": -8.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM35",
+            "NodeCost": 1000,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "UM37"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 4
+              }
+            ],
+            "UnlockedBy": [
+              "UM34"
+            ],
+            "Unlocks": [
+              "UM38"
+            ],
+            "Position": {
+              "x": 4792.0,
+              "y": -264.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM36",
+            "NodeCost": 1000,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "Booster Pack Ultramarines"
+                },
+                "quantity": 1
+              }
+            ],
+            "UnlockedBy": [
+              "UM34"
+            ],
+            "Unlocks": [
+              "UM38",
+              "UM39"
+            ],
+            "Position": {
+              "x": 4792.0,
+              "y": -8.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM37",
+            "NodeCost": 1000,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "UM18"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 4
+              }
+            ],
+            "UnlockedBy": [
+              "UM34"
+            ],
+            "Unlocks": [
+              "UM39"
+            ],
+            "Position": {
+              "x": 4792.0,
+              "y": 248.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM38",
+            "NodeCost": 1000,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "Booster Pack Ultramarines"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "Booster Pack Ultramarines"
+                },
+                "quantity": 1,
+                "rewardTier": 10
+              }
+            ],
+            "UnlockedBy": [
+              "UM35",
+              "UM36"
+            ],
+            "Unlocks": [
+              "UM40",
+              "UM41"
+            ],
+            "Position": {
+              "x": 5112.0,
+              "y": -136.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM39",
+            "NodeCost": 1000,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "C2"
+                },
+                "quantity": 500
+              },
+              {
+                "item": {
+                  "targetId": "WildcardUltramarines2"
+                },
+                "quantity": 1,
+                "rewardTier": 10
+              }
+            ],
+            "UnlockedBy": [
+              "UM36",
+              "UM37"
+            ],
+            "Unlocks": [
+              "UM41",
+              "UM42"
+            ],
+            "Position": {
+              "x": 5112.0,
+              "y": 120.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM40",
+            "NodeCost": 1000,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "WildcardUltramarines2"
+                },
+                "quantity": 1
+              }
+            ],
+            "UnlockedBy": [
+              "UM38"
+            ],
+            "Unlocks": [
+              "UM43"
+            ],
+            "Position": {
+              "x": 5432.0,
+              "y": -264.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM41",
+            "NodeCost": 1000,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "Booster Pack Ultramarines"
+                },
+                "quantity": 1
+              }
+            ],
+            "UnlockedBy": [
+              "UM38",
+              "UM39"
+            ],
+            "Unlocks": [
+              "UM43",
+              "UM44"
+            ],
+            "Position": {
+              "x": 5432.0,
+              "y": -8.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM42",
+            "NodeCost": 1000,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "DT Ultramarines R3"
+                },
+                "quantity": 1
+              }
+            ],
+            "UnlockedBy": [
+              "UM39"
+            ],
+            "Unlocks": [
+              "UM44"
+            ],
+            "Position": {
+              "x": 5432.0,
+              "y": 248.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM43",
+            "NodeCost": 1000,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "WildcardUltramarines2"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "3a65e0454212c48d0a1c03a500b83262"
+                },
+                "quantity": 1,
+                "rewardTier": 10
+              }
+            ],
+            "UnlockedBy": [
+              "UM40",
+              "UM41"
+            ],
+            "Unlocks": [
+              "UM45"
+            ],
+            "Position": {
+              "x": 5752.0,
+              "y": -136.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM44",
+            "NodeCost": 1000,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "Booster Pack Ultramarines"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "WildcardUltramarines3"
+                },
+                "quantity": 1,
+                "rewardTier": 10
+              }
+            ],
+            "UnlockedBy": [
+              "UM41",
+              "UM42"
+            ],
+            "Unlocks": [
+              "UM45"
+            ],
+            "Position": {
+              "x": 5752.0,
+              "y": 120.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM45",
+            "NodeCost": 1000,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "dd590709eb8591e4c997d3079221294c"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "DT Ultramarines All"
+                },
+                "quantity": 4
+              },
+              {
+                "item": {
+                  "targetId": "8c4524d276408314bb4af76ff397c62f"
+                },
+                "quantity": 1,
+                "rewardTier": 10
+              }
+            ],
+            "UnlockedBy": [
+              "UM43",
+              "UM44"
+            ],
+            "Unlocks": [
+              "UM46"
+            ],
+            "Position": {
+              "x": 6072.0,
+              "y": -8.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM46",
+            "NodeCost": 1000,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "DT Ultramarines R4"
+                },
+                "quantity": 1
+              },
+              {
+                "item": {
+                  "targetId": "WildcardUltramarines4"
+                },
+                "quantity": 1,
+                "rewardTier": 10
+              }
+            ],
+            "UnlockedBy": [
+              "UM45"
+            ],
+            "Unlocks": [
+              "UM47"
+            ],
+            "Position": {
+              "x": 6392.0,
+              "y": -8.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "UM47",
+            "NodeCost": 1100,
+            "Rewards": [
+              {
+                "item": {
+                  "targetId": "Booster Pack Ultramarines"
+                },
+                "quantity": 1
+              }
+            ],
+            "UnlockedBy": [
+              "UM46"
+            ],
             "Unlocks": [],
             "Position": {
-              "x": 0.0,
-              "y": 0.0
+              "x": 6712.0,
+              "y": -8.0
             },
             "IsRepeatable": true
           }
@@ -106,12 +1470,44 @@
             "NodeCost": 0,
             "Rewards": [],
             "UnlockedBy": [],
-            "Unlocks": [],
+            "Unlocks": [
+              "campaign_Goff_node1"
+            ],
             "Position": {
               "x": 0.0,
               "y": 0.0
             },
-            "IsRepeatable": true
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_Goff_node1",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_Goff_node0"
+            ],
+            "Unlocks": [
+              "campaign_Goff_node2"
+            ],
+            "Position": {
+              "x": 320.0,
+              "y": 128.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_Goff_node2",
+            "NodeCost": 1,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_Goff_node1"
+            ],
+            "Unlocks": [],
+            "Position": {
+              "x": 640.0,
+              "y": 0.0
+            },
+            "IsRepeatable": false
           }
         ]
       },
@@ -170,12 +1566,44 @@
             "NodeCost": 0,
             "Rewards": [],
             "UnlockedBy": [],
-            "Unlocks": [],
+            "Unlocks": [
+              "campaign_SaimHann_node1"
+            ],
             "Position": {
               "x": 0.0,
               "y": 0.0
             },
-            "IsRepeatable": true
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_SaimHann_node1",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_SaimHann_node0"
+            ],
+            "Unlocks": [
+              "campaign_SaimHann_node2"
+            ],
+            "Position": {
+              "x": 320.0,
+              "y": 128.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_SaimHann_node2",
+            "NodeCost": 1,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_SaimHann_node1"
+            ],
+            "Unlocks": [],
+            "Position": {
+              "x": 640.0,
+              "y": 0.0
+            },
+            "IsRepeatable": false
           }
         ]
       },
@@ -234,12 +1662,44 @@
             "NodeCost": 0,
             "Rewards": [],
             "UnlockedBy": [],
-            "Unlocks": [],
+            "Unlocks": [
+              "campaign_Sautekh_node1"
+            ],
             "Position": {
               "x": 0.0,
               "y": 0.0
             },
-            "IsRepeatable": true
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_Sautekh_node1",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_Sautekh_node0"
+            ],
+            "Unlocks": [
+              "campaign_Sautekh_node2"
+            ],
+            "Position": {
+              "x": 320.0,
+              "y": 128.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_Sautekh_node2",
+            "NodeCost": 1,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_Sautekh_node1"
+            ],
+            "Unlocks": [],
+            "Position": {
+              "x": 640.0,
+              "y": 0.0
+            },
+            "IsRepeatable": false
           }
         ]
       },
@@ -298,12 +1758,44 @@
             "NodeCost": 0,
             "Rewards": [],
             "UnlockedBy": [],
-            "Unlocks": [],
+            "Unlocks": [
+              "campaign_BlackLegion_node1"
+            ],
             "Position": {
               "x": 0.0,
               "y": 0.0
             },
-            "IsRepeatable": true
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_BlackLegion_node1",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_BlackLegion_node0"
+            ],
+            "Unlocks": [
+              "campaign_BlackLegion_node2"
+            ],
+            "Position": {
+              "x": 320.0,
+              "y": 128.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_BlackLegion_node2",
+            "NodeCost": 1,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_BlackLegion_node1"
+            ],
+            "Unlocks": [],
+            "Position": {
+              "x": 640.0,
+              "y": 0.0
+            },
+            "IsRepeatable": false
           }
         ]
       },
@@ -362,12 +1854,44 @@
             "NodeCost": 0,
             "Rewards": [],
             "UnlockedBy": [],
-            "Unlocks": [],
+            "Unlocks": [
+              "campaign_Leviathan_node1"
+            ],
             "Position": {
               "x": 0.0,
               "y": 0.0
             },
-            "IsRepeatable": true
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_Leviathan_node1",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_Leviathan_node0"
+            ],
+            "Unlocks": [
+              "campaign_Leviathan_node2"
+            ],
+            "Position": {
+              "x": 320.0,
+              "y": 128.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_Leviathan_node2",
+            "NodeCost": 1,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_Leviathan_node1"
+            ],
+            "Unlocks": [],
+            "Position": {
+              "x": 640.0,
+              "y": 0.0
+            },
+            "IsRepeatable": false
           }
         ]
       },
@@ -426,12 +1950,44 @@
             "NodeCost": 0,
             "Rewards": [],
             "UnlockedBy": [],
-            "Unlocks": [],
+            "Unlocks": [
+              "campaign_TauEmpire_node1"
+            ],
             "Position": {
               "x": 0.0,
               "y": 0.0
             },
-            "IsRepeatable": true
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_TauEmpire_node1",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_TauEmpire_node0"
+            ],
+            "Unlocks": [
+              "campaign_TauEmpire_node2"
+            ],
+            "Position": {
+              "x": 320.0,
+              "y": 128.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_TauEmpire_node2",
+            "NodeCost": 1,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_TauEmpire_node1"
+            ],
+            "Unlocks": [],
+            "Position": {
+              "x": 640.0,
+              "y": 0.0
+            },
+            "IsRepeatable": false
           }
         ]
       },
@@ -490,12 +2046,44 @@
             "NodeCost": 0,
             "Rewards": [],
             "UnlockedBy": [],
-            "Unlocks": [],
+            "Unlocks": [
+              "campaign_Sororitas_node1"
+            ],
             "Position": {
               "x": 0.0,
               "y": 0.0
             },
-            "IsRepeatable": true
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_Sororitas_node1",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_Sororitas_node0"
+            ],
+            "Unlocks": [
+              "campaign_Sororitas_node2"
+            ],
+            "Position": {
+              "x": 320.0,
+              "y": 128.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_Sororitas_node2",
+            "NodeCost": 1,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_Sororitas_node1"
+            ],
+            "Unlocks": [],
+            "Position": {
+              "x": 640.0,
+              "y": 0.0
+            },
+            "IsRepeatable": false
           }
         ]
       },
@@ -554,12 +2142,44 @@
             "NodeCost": 0,
             "Rewards": [],
             "UnlockedBy": [],
-            "Unlocks": [],
+            "Unlocks": [
+              "campaign_Genestealers_node1"
+            ],
             "Position": {
               "x": 0.0,
               "y": 0.0
             },
-            "IsRepeatable": true
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_Genestealers_node1",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_Genestealers_node0"
+            ],
+            "Unlocks": [
+              "campaign_Genestealers_node2"
+            ],
+            "Position": {
+              "x": 320.0,
+              "y": 128.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_Genestealers_node2",
+            "NodeCost": 1,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_Genestealers_node1"
+            ],
+            "Unlocks": [],
+            "Position": {
+              "x": 640.0,
+              "y": 0.0
+            },
+            "IsRepeatable": false
           }
         ]
       },
@@ -618,12 +2238,44 @@
             "NodeCost": 0,
             "Rewards": [],
             "UnlockedBy": [],
-            "Unlocks": [],
+            "Unlocks": [
+              "campaign_AstraMilitarum_node1"
+            ],
             "Position": {
               "x": 0.0,
               "y": 0.0
             },
-            "IsRepeatable": true
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_AstraMilitarum_node1",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_AstraMilitarum_node0"
+            ],
+            "Unlocks": [
+              "campaign_AstraMilitarum_node2"
+            ],
+            "Position": {
+              "x": 320.0,
+              "y": 128.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_AstraMilitarum_node2",
+            "NodeCost": 1,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_AstraMilitarum_node1"
+            ],
+            "Unlocks": [],
+            "Position": {
+              "x": 640.0,
+              "y": 0.0
+            },
+            "IsRepeatable": false
           }
         ]
       },
@@ -682,12 +2334,44 @@
             "NodeCost": 0,
             "Rewards": [],
             "UnlockedBy": [],
-            "Unlocks": [],
+            "Unlocks": [
+              "campaign_DarkAngels_node1"
+            ],
             "Position": {
               "x": 0.0,
               "y": 0.0
             },
-            "IsRepeatable": true
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_DarkAngels_node1",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_DarkAngels_node0"
+            ],
+            "Unlocks": [
+              "campaign_DarkAngels_node2"
+            ],
+            "Position": {
+              "x": 320.0,
+              "y": 128.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_DarkAngels_node2",
+            "NodeCost": 1,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_DarkAngels_node1"
+            ],
+            "Unlocks": [],
+            "Position": {
+              "x": 640.0,
+              "y": 0.0
+            },
+            "IsRepeatable": false
           }
         ]
       },
@@ -746,12 +2430,44 @@
             "NodeCost": 0,
             "Rewards": [],
             "UnlockedBy": [],
-            "Unlocks": [],
+            "Unlocks": [
+              "campaign_EmperorsChildren_node1"
+            ],
             "Position": {
               "x": 0.0,
               "y": 0.0
             },
-            "IsRepeatable": true
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_EmperorsChildren_node1",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_EmperorsChildren_node0"
+            ],
+            "Unlocks": [
+              "campaign_EmperorsChildren_node2"
+            ],
+            "Position": {
+              "x": 320.0,
+              "y": 128.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_EmperorsChildren_node2",
+            "NodeCost": 1,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_EmperorsChildren_node1"
+            ],
+            "Unlocks": [],
+            "Position": {
+              "x": 640.0,
+              "y": 0.0
+            },
+            "IsRepeatable": false
           }
         ]
       },
@@ -810,12 +2526,44 @@
             "NodeCost": 0,
             "Rewards": [],
             "UnlockedBy": [],
-            "Unlocks": [],
+            "Unlocks": [
+              "campaign_SpaceWolves_node1"
+            ],
             "Position": {
               "x": 0.0,
               "y": 0.0
             },
-            "IsRepeatable": true
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_SpaceWolves_node1",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_SpaceWolves_node0"
+            ],
+            "Unlocks": [
+              "campaign_SpaceWolves_node2"
+            ],
+            "Position": {
+              "x": 320.0,
+              "y": 128.0
+            },
+            "IsRepeatable": false
+          },
+          {
+            "NodeId": "campaign_SpaceWolves_node2",
+            "NodeCost": 1,
+            "Rewards": [],
+            "UnlockedBy": [
+              "campaign_SpaceWolves_node1"
+            ],
+            "Unlocks": [],
+            "Position": {
+              "x": 640.0,
+              "y": 0.0
+            },
+            "IsRepeatable": false
           }
         ]
       },

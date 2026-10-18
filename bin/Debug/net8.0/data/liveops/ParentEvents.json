@@ -1,0 +1,51 @@
+{
+  "SharedData": {},
+  "RawEvents": [
+    {
+      "Data": {
+        "$type": "ParentEventData, Assembly-CSharp",
+        "eventId": "RewardsMenu",
+        "enabled": true,
+        "activationType": 0,
+        "dates": {
+          "startDate": 0,
+          "endDate": 4102444800000,
+          "previewable": false,
+          "previewDate": 0,
+          "expirable": false,
+          "expireDate": 4102444800000,
+          "eventStages": []
+        },
+        "filter": {
+          "army": 0,
+          "expansion": 0,
+          "hasDuration": false,
+          "eventDuration": 0,
+          "hasCooldown": false,
+          "eventCooldown": 0,
+          "eventGroups": []
+        },
+        "priority": 0,
+        "showInMainMenu": false,
+        "location": {
+          "type": 1
+        },
+        "drawData": {
+          "EventAssets": [],
+          "EventComponents": [],
+          "EventLabels": []
+        },
+        "showInNavigationBar": false
+      },
+      "Persistence": {
+        "$type": "ParentEventPersistence, Assembly-CSharp",
+        "eventId": "RewardsMenu",
+        "IsNew": false,
+        "WasSeen": true,
+        "IsActive": true,
+        "triggerTime": 0,
+        "expiredTime": 0
+      }
+    }
+  ]
+}

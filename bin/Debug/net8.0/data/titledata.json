@@ -859,5 +859,185 @@
       "max_end_turn_delay": 1.0
     },
     "disableFTUE": true
+  },
+  "Templates": {
+    "Templates": {}
+  },
+  "ShopConfig": {
+    "dropTables": [],
+    "customDropTables": [],
+    "containers": [],
+    "xsollaItems": [],
+    "offerLists": [],
+    "genericArmyItems": []
+  },
+  "EventGroups": {
+    "groups": []
+  },
+  "WildcardConfig": {
+    "wildcards": []
+  },
+  "PremiumConfig": {
+    "premiumItems": []
+  },
+  "AlliancesConfig": {
+    "maxMemberCount": 30,
+    "trophies": []
+  },
+  "GameModesConfig": {
+    "rankedRanks": [
+      {
+        "division": 1,
+        "rank": 3,
+        "sealsRequiredToUpdate": 3,
+        "correspondingMMR": 0,
+        "preventLosingRank": true,
+        "preventLosingSeals": false
+      },
+      {
+        "division": 1,
+        "rank": 2,
+        "sealsRequiredToUpdate": 3,
+        "correspondingMMR": 150,
+        "preventLosingRank": false,
+        "preventLosingSeals": false
+      },
+      {
+        "division": 1,
+        "rank": 1,
+        "sealsRequiredToUpdate": 3,
+        "correspondingMMR": 300,
+        "preventLosingRank": false,
+        "preventLosingSeals": false
+      },
+      {
+        "division": 2,
+        "rank": 3,
+        "sealsRequiredToUpdate": 3,
+        "correspondingMMR": 450,
+        "preventLosingRank": true,
+        "preventLosingSeals": false
+      },
+      {
+        "division": 2,
+        "rank": 2,
+        "sealsRequiredToUpdate": 3,
+        "correspondingMMR": 600,
+        "preventLosingRank": false,
+        "preventLosingSeals": false
+      },
+      {
+        "division": 2,
+        "rank": 1,
+        "sealsRequiredToUpdate": 3,
+        "correspondingMMR": 750,
+        "preventLosingRank": false,
+        "preventLosingSeals": false
+      },
+      {
+        "division": 3,
+        "rank": 3,
+        "sealsRequiredToUpdate": 3,
+        "correspondingMMR": 900,
+        "preventLosingRank": true,
+        "preventLosingSeals": false
+      },
+      {
+        "division": 3,
+        "rank": 2,
+        "sealsRequiredToUpdate": 3,
+        "correspondingMMR": 1050,
+        "preventLosingRank": false,
+        "preventLosingSeals": false
+      },
+      {
+        "division": 3,
+        "rank": 1,
+        "sealsRequiredToUpdate": 3,
+        "correspondingMMR": 1200,
+        "preventLosingRank": false,
+        "preventLosingSeals": false
+      },
+      {
+        "division": 4,
+        "rank": 3,
+        "sealsRequiredToUpdate": 3,
+        "correspondingMMR": 1350,
+        "preventLosingRank": true,
+        "preventLosingSeals": false
+      },
+      {
+        "division": 4,
+        "rank": 2,
+        "sealsRequiredToUpdate": 3,
+        "correspondingMMR": 1500,
+        "preventLosingRank": false,
+        "preventLosingSeals": false
+      },
+      {
+        "division": 4,
+        "rank": 1,
+        "sealsRequiredToUpdate": 3,
+        "correspondingMMR": 1650,
+        "preventLosingRank": false,
+        "preventLosingSeals": false
+      }
+    ]
+  },
+  "MissionsConfig": {
+    "configs": [],
+    "challenges": [
+      {
+        "$type": "DailyLoginChallenge, Assembly-CSharp",
+        "id": "DailyLogin",
+        "rewards": [
+          {
+            "difficulty": 1,
+            "targetValue": 1,
+            "rewards": []
+          },
+          {
+            "difficulty": 1,
+            "targetValue": 2,
+            "rewards": []
+          },
+          {
+            "difficulty": 1,
+            "targetValue": 3,
+            "rewards": []
+          },
+          {
+            "difficulty": 1,
+            "targetValue": 4,
+            "rewards": []
+          },
+          {
+            "difficulty": 1,
+            "targetValue": 5,
+            "rewards": []
+          },
+          {
+            "difficulty": 1,
+            "targetValue": 6,
+            "rewards": []
+          },
+          {
+            "difficulty": 1,
+            "targetValue": 7,
+            "rewards": []
+          }
+        ],
+        "expansion": 0,
+        "reachMilestoneWhen": 0,
+        "challengeType": 4,
+        "cummulative": false,
+        "allowOnTutorials": true,
+        "sequentialDays": false
+      }
+    ],
+    "challengeLists": [],
+    "dailyLoginRef": {
+      "targetId": "DailyLogin"
+    }
   }
 }

@@ -26,7 +26,7 @@
   "Inventory": [],
   "Statistics": {},
   "LastSteamTicketLength": 468,
-  "LastLogin": "2026-10-18T09:47:48.569Z",
+  "LastLogin": "2026-10-18T11:33:39.921Z",
   "EntityObjects": {},
   "StarterDeck": "UM_SK_Starter",
   "SelectedArmy": 10,
@@ -41,7 +41,13 @@
       "resetProgress": false
     }
   },
-  "EventSaves": {},
+  "EventSaves": {
+    "campaign_Ultramarines": {
+      "NodesCollected": [
+        "UM0"
+      ]
+    }
+  },
   "VictoryCounters": {
     "PracticeEvent_won": 1
   },
@@ -71,5 +77,6 @@
       "enemyClan": "",
       "botAltid": ""
     }
-  ]
+  ],
+  "SharedData": {}
 }
