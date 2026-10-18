@@ -1,0 +1,75 @@
+{
+  "PlayFabId": "4F5130C340B54491",
+  "DisplayName": "Commander",
+  "SteamId": "0",
+  "Created": "2026-10-18T05:51:12.112Z",
+  "DataVersion": 13,
+  "UserData": {
+    "TutorialV2": {
+      "Value": "{\u0022stages\u0022:[{\u0022stageId\u0022:\u0022SelectArmy\u0022,\u0022isCompleted\u0022:true},{\u0022stageId\u0022:\u0022PlayRanked\u0022,\u0022isCompleted\u0022:true},{\u0022stageId\u0022:\u0022GetMission\u0022,\u0022isCompleted\u0022:true}]}",
+      "LastUpdated": "2026-10-18T09:50:45.222Z",
+      "Permission": "Private"
+    },
+    "DemoData": {
+      "Value": "{\u0022tutorialsCompleted\u0022:{},\u0022gameAfterTutorialPlayed\u0022:true,\u0022suscriptionPopupShowed\u0022:false,\u0022suscribed\u0022:false,\u0022currentDeck\u0022:\u0022UM_SK_1_2\u0022,\u0022canEnterDraftMode\u0022:true,\u0022feedbackSeen\u0022:false,\u0022feedbackSent\u0022:false}",
+      "LastUpdated": "2026-10-18T09:50:36.789Z",
+      "Permission": "Private"
+    }
+  },
+  "UserReadOnlyData": {},
+  "VirtualCurrency": {
+    "GO": 5000,
+    "C2": 500,
+    "C3": 100,
+    "EN": 10
+  },
+  "Inventory": [],
+  "Statistics": {},
+  "LastSteamTicketLength": 468,
+  "LastLogin": "2026-10-18T09:47:48.569Z",
+  "EntityObjects": {},
+  "StarterDeck": "UM_SK_Starter",
+  "SelectedArmy": 10,
+  "Achievements": {
+    "Ach_24": {
+      "id": "Ach_24",
+      "value": 13,
+      "highestValue": 13,
+      "enabled": true,
+      "collectedRewards": 0,
+      "premiumCollectedRewards": 0,
+      "resetProgress": false
+    }
+  },
+  "EventSaves": {},
+  "VictoryCounters": {
+    "PracticeEvent_won": 1
+  },
+  "BattleLog": [
+    {
+      "season": 1,
+      "enemyId": "AI",
+      "matchWin": true,
+      "matchLose": false,
+      "ownExp": 0,
+      "enemyExp": 0,
+      "ownTotalExp": 0,
+      "enemyTotalExp": 0,
+      "ownGlobalRating": 1000,
+      "enemyGlobalRating": 1000,
+      "ownHeroName": "UM47",
+      "enemyHeroName": "ASH74",
+      "ownName": "Commander",
+      "enemyName": "Jain Zar",
+      "ownSkulls": 3,
+      "enemySkulls": 2,
+      "recordingIndex": "",
+      "matchType": 6,
+      "replaysVersion": "1.35.0",
+      "pinned": false,
+      "playerClan": "",
+      "enemyClan": "",
+      "botAltid": ""
+    }
+  ]
+}

@@ -1,0 +1,837 @@
+{
+  "SharedData": {},
+  "RawEvents": [
+    {
+      "Data": {
+        "$type": "Everguild.LiveOps.CampaignEventData, Assembly-CSharp",
+        "eventId": "campaign_Ultramarines",
+        "enabled": true,
+        "activationType": 0,
+        "dates": {
+          "startDate": 0,
+          "endDate": 4102444800000,
+          "previewable": false,
+          "previewDate": 0,
+          "expirable": false,
+          "expireDate": 4102444800000,
+          "eventStages": []
+        },
+        "filter": {
+          "army": 10,
+          "expansion": 0,
+          "hasDuration": false,
+          "eventDuration": 0,
+          "hasCooldown": false,
+          "eventCooldown": 0,
+          "eventGroups": []
+        },
+        "priority": 0,
+        "showInMainMenu": false,
+        "location": {
+          "type": 1
+        },
+        "drawData": {
+          "EventAssets": [],
+          "EventComponents": [],
+          "EventLabels": []
+        },
+        "PointsPerLevel": 1,
+        "Nodes": [
+          {
+            "NodeId": "campaign_Ultramarines_node0",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [],
+            "Unlocks": [],
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "IsRepeatable": true
+          }
+        ]
+      },
+      "Persistence": {
+        "$type": "CampaignPersistence, Assembly-CSharp",
+        "eventId": "campaign_Ultramarines",
+        "IsNew": false,
+        "WasSeen": true,
+        "IsActive": true,
+        "triggerTime": 0,
+        "expiredTime": 0,
+        "NodesCollected": [],
+        "PremiumNodesCollected": [],
+        "UsedPoints": 0,
+        "TotalPoints": 0
+      }
+    },
+    {
+      "Data": {
+        "$type": "Everguild.LiveOps.CampaignEventData, Assembly-CSharp",
+        "eventId": "campaign_Goff",
+        "enabled": true,
+        "activationType": 0,
+        "dates": {
+          "startDate": 0,
+          "endDate": 4102444800000,
+          "previewable": false,
+          "previewDate": 0,
+          "expirable": false,
+          "expireDate": 4102444800000,
+          "eventStages": []
+        },
+        "filter": {
+          "army": 20,
+          "expansion": 0,
+          "hasDuration": false,
+          "eventDuration": 0,
+          "hasCooldown": false,
+          "eventCooldown": 0,
+          "eventGroups": []
+        },
+        "priority": 0,
+        "showInMainMenu": false,
+        "location": {
+          "type": 1
+        },
+        "drawData": {
+          "EventAssets": [],
+          "EventComponents": [],
+          "EventLabels": []
+        },
+        "PointsPerLevel": 1,
+        "Nodes": [
+          {
+            "NodeId": "campaign_Goff_node0",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [],
+            "Unlocks": [],
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "IsRepeatable": true
+          }
+        ]
+      },
+      "Persistence": {
+        "$type": "CampaignPersistence, Assembly-CSharp",
+        "eventId": "campaign_Goff",
+        "IsNew": false,
+        "WasSeen": true,
+        "IsActive": true,
+        "triggerTime": 0,
+        "expiredTime": 0,
+        "NodesCollected": [],
+        "PremiumNodesCollected": [],
+        "UsedPoints": 0,
+        "TotalPoints": 0
+      }
+    },
+    {
+      "Data": {
+        "$type": "Everguild.LiveOps.CampaignEventData, Assembly-CSharp",
+        "eventId": "campaign_SaimHann",
+        "enabled": true,
+        "activationType": 0,
+        "dates": {
+          "startDate": 0,
+          "endDate": 4102444800000,
+          "previewable": false,
+          "previewDate": 0,
+          "expirable": false,
+          "expireDate": 4102444800000,
+          "eventStages": []
+        },
+        "filter": {
+          "army": 30,
+          "expansion": 0,
+          "hasDuration": false,
+          "eventDuration": 0,
+          "hasCooldown": false,
+          "eventCooldown": 0,
+          "eventGroups": []
+        },
+        "priority": 0,
+        "showInMainMenu": false,
+        "location": {
+          "type": 1
+        },
+        "drawData": {
+          "EventAssets": [],
+          "EventComponents": [],
+          "EventLabels": []
+        },
+        "PointsPerLevel": 1,
+        "Nodes": [
+          {
+            "NodeId": "campaign_SaimHann_node0",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [],
+            "Unlocks": [],
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "IsRepeatable": true
+          }
+        ]
+      },
+      "Persistence": {
+        "$type": "CampaignPersistence, Assembly-CSharp",
+        "eventId": "campaign_SaimHann",
+        "IsNew": false,
+        "WasSeen": true,
+        "IsActive": true,
+        "triggerTime": 0,
+        "expiredTime": 0,
+        "NodesCollected": [],
+        "PremiumNodesCollected": [],
+        "UsedPoints": 0,
+        "TotalPoints": 0
+      }
+    },
+    {
+      "Data": {
+        "$type": "Everguild.LiveOps.CampaignEventData, Assembly-CSharp",
+        "eventId": "campaign_Sautekh",
+        "enabled": true,
+        "activationType": 0,
+        "dates": {
+          "startDate": 0,
+          "endDate": 4102444800000,
+          "previewable": false,
+          "previewDate": 0,
+          "expirable": false,
+          "expireDate": 4102444800000,
+          "eventStages": []
+        },
+        "filter": {
+          "army": 40,
+          "expansion": 0,
+          "hasDuration": false,
+          "eventDuration": 0,
+          "hasCooldown": false,
+          "eventCooldown": 0,
+          "eventGroups": []
+        },
+        "priority": 0,
+        "showInMainMenu": false,
+        "location": {
+          "type": 1
+        },
+        "drawData": {
+          "EventAssets": [],
+          "EventComponents": [],
+          "EventLabels": []
+        },
+        "PointsPerLevel": 1,
+        "Nodes": [
+          {
+            "NodeId": "campaign_Sautekh_node0",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [],
+            "Unlocks": [],
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "IsRepeatable": true
+          }
+        ]
+      },
+      "Persistence": {
+        "$type": "CampaignPersistence, Assembly-CSharp",
+        "eventId": "campaign_Sautekh",
+        "IsNew": false,
+        "WasSeen": true,
+        "IsActive": true,
+        "triggerTime": 0,
+        "expiredTime": 0,
+        "NodesCollected": [],
+        "PremiumNodesCollected": [],
+        "UsedPoints": 0,
+        "TotalPoints": 0
+      }
+    },
+    {
+      "Data": {
+        "$type": "Everguild.LiveOps.CampaignEventData, Assembly-CSharp",
+        "eventId": "campaign_BlackLegion",
+        "enabled": true,
+        "activationType": 0,
+        "dates": {
+          "startDate": 0,
+          "endDate": 4102444800000,
+          "previewable": false,
+          "previewDate": 0,
+          "expirable": false,
+          "expireDate": 4102444800000,
+          "eventStages": []
+        },
+        "filter": {
+          "army": 50,
+          "expansion": 0,
+          "hasDuration": false,
+          "eventDuration": 0,
+          "hasCooldown": false,
+          "eventCooldown": 0,
+          "eventGroups": []
+        },
+        "priority": 0,
+        "showInMainMenu": false,
+        "location": {
+          "type": 1
+        },
+        "drawData": {
+          "EventAssets": [],
+          "EventComponents": [],
+          "EventLabels": []
+        },
+        "PointsPerLevel": 1,
+        "Nodes": [
+          {
+            "NodeId": "campaign_BlackLegion_node0",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [],
+            "Unlocks": [],
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "IsRepeatable": true
+          }
+        ]
+      },
+      "Persistence": {
+        "$type": "CampaignPersistence, Assembly-CSharp",
+        "eventId": "campaign_BlackLegion",
+        "IsNew": false,
+        "WasSeen": true,
+        "IsActive": true,
+        "triggerTime": 0,
+        "expiredTime": 0,
+        "NodesCollected": [],
+        "PremiumNodesCollected": [],
+        "UsedPoints": 0,
+        "TotalPoints": 0
+      }
+    },
+    {
+      "Data": {
+        "$type": "Everguild.LiveOps.CampaignEventData, Assembly-CSharp",
+        "eventId": "campaign_Leviathan",
+        "enabled": true,
+        "activationType": 0,
+        "dates": {
+          "startDate": 0,
+          "endDate": 4102444800000,
+          "previewable": false,
+          "previewDate": 0,
+          "expirable": false,
+          "expireDate": 4102444800000,
+          "eventStages": []
+        },
+        "filter": {
+          "army": 60,
+          "expansion": 0,
+          "hasDuration": false,
+          "eventDuration": 0,
+          "hasCooldown": false,
+          "eventCooldown": 0,
+          "eventGroups": []
+        },
+        "priority": 0,
+        "showInMainMenu": false,
+        "location": {
+          "type": 1
+        },
+        "drawData": {
+          "EventAssets": [],
+          "EventComponents": [],
+          "EventLabels": []
+        },
+        "PointsPerLevel": 1,
+        "Nodes": [
+          {
+            "NodeId": "campaign_Leviathan_node0",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [],
+            "Unlocks": [],
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "IsRepeatable": true
+          }
+        ]
+      },
+      "Persistence": {
+        "$type": "CampaignPersistence, Assembly-CSharp",
+        "eventId": "campaign_Leviathan",
+        "IsNew": false,
+        "WasSeen": true,
+        "IsActive": true,
+        "triggerTime": 0,
+        "expiredTime": 0,
+        "NodesCollected": [],
+        "PremiumNodesCollected": [],
+        "UsedPoints": 0,
+        "TotalPoints": 0
+      }
+    },
+    {
+      "Data": {
+        "$type": "Everguild.LiveOps.CampaignEventData, Assembly-CSharp",
+        "eventId": "campaign_TauEmpire",
+        "enabled": true,
+        "activationType": 0,
+        "dates": {
+          "startDate": 0,
+          "endDate": 4102444800000,
+          "previewable": false,
+          "previewDate": 0,
+          "expirable": false,
+          "expireDate": 4102444800000,
+          "eventStages": []
+        },
+        "filter": {
+          "army": 70,
+          "expansion": 0,
+          "hasDuration": false,
+          "eventDuration": 0,
+          "hasCooldown": false,
+          "eventCooldown": 0,
+          "eventGroups": []
+        },
+        "priority": 0,
+        "showInMainMenu": false,
+        "location": {
+          "type": 1
+        },
+        "drawData": {
+          "EventAssets": [],
+          "EventComponents": [],
+          "EventLabels": []
+        },
+        "PointsPerLevel": 1,
+        "Nodes": [
+          {
+            "NodeId": "campaign_TauEmpire_node0",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [],
+            "Unlocks": [],
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "IsRepeatable": true
+          }
+        ]
+      },
+      "Persistence": {
+        "$type": "CampaignPersistence, Assembly-CSharp",
+        "eventId": "campaign_TauEmpire",
+        "IsNew": false,
+        "WasSeen": true,
+        "IsActive": true,
+        "triggerTime": 0,
+        "expiredTime": 0,
+        "NodesCollected": [],
+        "PremiumNodesCollected": [],
+        "UsedPoints": 0,
+        "TotalPoints": 0
+      }
+    },
+    {
+      "Data": {
+        "$type": "Everguild.LiveOps.CampaignEventData, Assembly-CSharp",
+        "eventId": "campaign_Sororitas",
+        "enabled": true,
+        "activationType": 0,
+        "dates": {
+          "startDate": 0,
+          "endDate": 4102444800000,
+          "previewable": false,
+          "previewDate": 0,
+          "expirable": false,
+          "expireDate": 4102444800000,
+          "eventStages": []
+        },
+        "filter": {
+          "army": 80,
+          "expansion": 0,
+          "hasDuration": false,
+          "eventDuration": 0,
+          "hasCooldown": false,
+          "eventCooldown": 0,
+          "eventGroups": []
+        },
+        "priority": 0,
+        "showInMainMenu": false,
+        "location": {
+          "type": 1
+        },
+        "drawData": {
+          "EventAssets": [],
+          "EventComponents": [],
+          "EventLabels": []
+        },
+        "PointsPerLevel": 1,
+        "Nodes": [
+          {
+            "NodeId": "campaign_Sororitas_node0",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [],
+            "Unlocks": [],
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "IsRepeatable": true
+          }
+        ]
+      },
+      "Persistence": {
+        "$type": "CampaignPersistence, Assembly-CSharp",
+        "eventId": "campaign_Sororitas",
+        "IsNew": false,
+        "WasSeen": true,
+        "IsActive": true,
+        "triggerTime": 0,
+        "expiredTime": 0,
+        "NodesCollected": [],
+        "PremiumNodesCollected": [],
+        "UsedPoints": 0,
+        "TotalPoints": 0
+      }
+    },
+    {
+      "Data": {
+        "$type": "Everguild.LiveOps.CampaignEventData, Assembly-CSharp",
+        "eventId": "campaign_Genestealers",
+        "enabled": true,
+        "activationType": 0,
+        "dates": {
+          "startDate": 0,
+          "endDate": 4102444800000,
+          "previewable": false,
+          "previewDate": 0,
+          "expirable": false,
+          "expireDate": 4102444800000,
+          "eventStages": []
+        },
+        "filter": {
+          "army": 90,
+          "expansion": 0,
+          "hasDuration": false,
+          "eventDuration": 0,
+          "hasCooldown": false,
+          "eventCooldown": 0,
+          "eventGroups": []
+        },
+        "priority": 0,
+        "showInMainMenu": false,
+        "location": {
+          "type": 1
+        },
+        "drawData": {
+          "EventAssets": [],
+          "EventComponents": [],
+          "EventLabels": []
+        },
+        "PointsPerLevel": 1,
+        "Nodes": [
+          {
+            "NodeId": "campaign_Genestealers_node0",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [],
+            "Unlocks": [],
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "IsRepeatable": true
+          }
+        ]
+      },
+      "Persistence": {
+        "$type": "CampaignPersistence, Assembly-CSharp",
+        "eventId": "campaign_Genestealers",
+        "IsNew": false,
+        "WasSeen": true,
+        "IsActive": true,
+        "triggerTime": 0,
+        "expiredTime": 0,
+        "NodesCollected": [],
+        "PremiumNodesCollected": [],
+        "UsedPoints": 0,
+        "TotalPoints": 0
+      }
+    },
+    {
+      "Data": {
+        "$type": "Everguild.LiveOps.CampaignEventData, Assembly-CSharp",
+        "eventId": "campaign_AstraMilitarum",
+        "enabled": true,
+        "activationType": 0,
+        "dates": {
+          "startDate": 0,
+          "endDate": 4102444800000,
+          "previewable": false,
+          "previewDate": 0,
+          "expirable": false,
+          "expireDate": 4102444800000,
+          "eventStages": []
+        },
+        "filter": {
+          "army": 100,
+          "expansion": 0,
+          "hasDuration": false,
+          "eventDuration": 0,
+          "hasCooldown": false,
+          "eventCooldown": 0,
+          "eventGroups": []
+        },
+        "priority": 0,
+        "showInMainMenu": false,
+        "location": {
+          "type": 1
+        },
+        "drawData": {
+          "EventAssets": [],
+          "EventComponents": [],
+          "EventLabels": []
+        },
+        "PointsPerLevel": 1,
+        "Nodes": [
+          {
+            "NodeId": "campaign_AstraMilitarum_node0",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [],
+            "Unlocks": [],
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "IsRepeatable": true
+          }
+        ]
+      },
+      "Persistence": {
+        "$type": "CampaignPersistence, Assembly-CSharp",
+        "eventId": "campaign_AstraMilitarum",
+        "IsNew": false,
+        "WasSeen": true,
+        "IsActive": true,
+        "triggerTime": 0,
+        "expiredTime": 0,
+        "NodesCollected": [],
+        "PremiumNodesCollected": [],
+        "UsedPoints": 0,
+        "TotalPoints": 0
+      }
+    },
+    {
+      "Data": {
+        "$type": "Everguild.LiveOps.CampaignEventData, Assembly-CSharp",
+        "eventId": "campaign_DarkAngels",
+        "enabled": true,
+        "activationType": 0,
+        "dates": {
+          "startDate": 0,
+          "endDate": 4102444800000,
+          "previewable": false,
+          "previewDate": 0,
+          "expirable": false,
+          "expireDate": 4102444800000,
+          "eventStages": []
+        },
+        "filter": {
+          "army": 110,
+          "expansion": 0,
+          "hasDuration": false,
+          "eventDuration": 0,
+          "hasCooldown": false,
+          "eventCooldown": 0,
+          "eventGroups": []
+        },
+        "priority": 0,
+        "showInMainMenu": false,
+        "location": {
+          "type": 1
+        },
+        "drawData": {
+          "EventAssets": [],
+          "EventComponents": [],
+          "EventLabels": []
+        },
+        "PointsPerLevel": 1,
+        "Nodes": [
+          {
+            "NodeId": "campaign_DarkAngels_node0",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [],
+            "Unlocks": [],
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "IsRepeatable": true
+          }
+        ]
+      },
+      "Persistence": {
+        "$type": "CampaignPersistence, Assembly-CSharp",
+        "eventId": "campaign_DarkAngels",
+        "IsNew": false,
+        "WasSeen": true,
+        "IsActive": true,
+        "triggerTime": 0,
+        "expiredTime": 0,
+        "NodesCollected": [],
+        "PremiumNodesCollected": [],
+        "UsedPoints": 0,
+        "TotalPoints": 0
+      }
+    },
+    {
+      "Data": {
+        "$type": "Everguild.LiveOps.CampaignEventData, Assembly-CSharp",
+        "eventId": "campaign_EmperorsChildren",
+        "enabled": true,
+        "activationType": 0,
+        "dates": {
+          "startDate": 0,
+          "endDate": 4102444800000,
+          "previewable": false,
+          "previewDate": 0,
+          "expirable": false,
+          "expireDate": 4102444800000,
+          "eventStages": []
+        },
+        "filter": {
+          "army": 120,
+          "expansion": 0,
+          "hasDuration": false,
+          "eventDuration": 0,
+          "hasCooldown": false,
+          "eventCooldown": 0,
+          "eventGroups": []
+        },
+        "priority": 0,
+        "showInMainMenu": false,
+        "location": {
+          "type": 1
+        },
+        "drawData": {
+          "EventAssets": [],
+          "EventComponents": [],
+          "EventLabels": []
+        },
+        "PointsPerLevel": 1,
+        "Nodes": [
+          {
+            "NodeId": "campaign_EmperorsChildren_node0",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [],
+            "Unlocks": [],
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "IsRepeatable": true
+          }
+        ]
+      },
+      "Persistence": {
+        "$type": "CampaignPersistence, Assembly-CSharp",
+        "eventId": "campaign_EmperorsChildren",
+        "IsNew": false,
+        "WasSeen": true,
+        "IsActive": true,
+        "triggerTime": 0,
+        "expiredTime": 0,
+        "NodesCollected": [],
+        "PremiumNodesCollected": [],
+        "UsedPoints": 0,
+        "TotalPoints": 0
+      }
+    },
+    {
+      "Data": {
+        "$type": "Everguild.LiveOps.CampaignEventData, Assembly-CSharp",
+        "eventId": "campaign_SpaceWolves",
+        "enabled": true,
+        "activationType": 0,
+        "dates": {
+          "startDate": 0,
+          "endDate": 4102444800000,
+          "previewable": false,
+          "previewDate": 0,
+          "expirable": false,
+          "expireDate": 4102444800000,
+          "eventStages": []
+        },
+        "filter": {
+          "army": 130,
+          "expansion": 0,
+          "hasDuration": false,
+          "eventDuration": 0,
+          "hasCooldown": false,
+          "eventCooldown": 0,
+          "eventGroups": []
+        },
+        "priority": 0,
+        "showInMainMenu": false,
+        "location": {
+          "type": 1
+        },
+        "drawData": {
+          "EventAssets": [],
+          "EventComponents": [],
+          "EventLabels": []
+        },
+        "PointsPerLevel": 1,
+        "Nodes": [
+          {
+            "NodeId": "campaign_SpaceWolves_node0",
+            "NodeCost": 0,
+            "Rewards": [],
+            "UnlockedBy": [],
+            "Unlocks": [],
+            "Position": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "IsRepeatable": true
+          }
+        ]
+      },
+      "Persistence": {
+        "$type": "CampaignPersistence, Assembly-CSharp",
+        "eventId": "campaign_SpaceWolves",
+        "IsNew": false,
+        "WasSeen": true,
+        "IsActive": true,
+        "triggerTime": 0,
+        "expiredTime": 0,
+        "NodesCollected": [],
+        "PremiumNodesCollected": [],
+        "UsedPoints": 0,
+        "TotalPoints": 0
+      }
+    }
+  ]
+}

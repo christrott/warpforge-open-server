@@ -1,0 +1,863 @@
+{
+  "ServerVersion": {
+    "iosVersion": "1.35.0",
+    "androidVersion": "1.35.0",
+    "pcVersion": "1.35.0",
+    "macVersion": "1.35.0",
+    "replaysVersion": "1.35.0",
+    "textVersion": 0,
+    "useNewMultiplayerVersion": false,
+    "multiplayerVersions": [],
+    "saveGameForceCompatibility": [],
+    "currentTitleDataRevision": 0,
+    "minimumTitleDataRevision": 0,
+    "photonServerRegion": 0,
+    "photonChatServerRegion": 0
+  },
+  "DailyStoresConfig": [],
+  "CloudscriptRestrictedVersionConfig": {
+    "Versions": [
+      {
+        "clientVersion": "1.35.0",
+        "revision": 0
+      }
+    ]
+  },
+  "LeaderboardConfig": {
+    "leaderboardDefinitions": [
+      {
+        "$type": "PlayfabLeaderboardDefinition, Assembly-CSharp",
+        "leaderboardKey": "RankedV3",
+        "scoringMode": 2,
+        "preload": false,
+        "entryCountToFetch": 50
+      },
+      {
+        "$type": "PlayfabLeaderboardDefinition, Assembly-CSharp",
+        "leaderboardKey": "Skirmish",
+        "scoringMode": 2,
+        "preload": false,
+        "entryCountToFetch": 50
+      }
+    ]
+  },
+  "FeatureConfig": {
+    "features": [],
+    "featureStatus": {},
+    "expansionsHidden": [],
+    "armiesHidden": [],
+    "expansionsNotCrafting": [],
+    "timeForAskingNotification": 0,
+    "botWaitTimes": [
+      {
+        "gamesLost": 0,
+        "maxWait": 1,
+        "minWait": 0,
+        "shouldMatchBotWithoutSearch": true
+      }
+    ],
+    "disableAllPlaystream": true,
+    "disableCloudscriptPlaystream": true,
+    "disableErrorPlaystream": true,
+    "disableNewMatchMaking": false
+  },
+  "AddressablesConfig": {
+    "preprod": {
+      "Name": "production",
+      "pcBucket": "local",
+      "macBucket": "",
+      "androidBucket": "",
+      "iosBucket": ""
+    },
+    "live": {
+      "Name": "production",
+      "pcBucket": "local",
+      "macBucket": "",
+      "androidBucket": "",
+      "iosBucket": ""
+    },
+    "preprodBadges": {
+      "list": [
+        {
+          "version": "1.35.0",
+          "badge": "latest"
+        }
+      ]
+    },
+    "liveBadges": {
+      "list": [
+        {
+          "version": "1.35.0",
+          "badge": "latest"
+        }
+      ]
+    },
+    "QABadges": {
+      "list": [
+        {
+          "version": "1.35.0",
+          "badge": "latest"
+        }
+      ]
+    },
+    "debugEditorBadge": "latest",
+    "remoteLabels": [],
+    "remoteLabelsBeforeTutorial": [],
+    "remoteLabelsAfterTutorial": [],
+    "showDownloadContentWarning": false,
+    "mbLimitForShowingContentWarning": 0
+  },
+  "CurrencyConfig": {
+    "currencies": [
+      {
+        "code": "GO",
+        "type": 0,
+        "displayName": {
+          "mTerm": "Gold"
+        },
+        "smallIcon": {
+          "guid": "",
+          "m_AssetGUID": "",
+          "m_SubObjectName": ""
+        },
+        "bigIcon": {
+          "guid": "",
+          "m_AssetGUID": "",
+          "m_SubObjectName": ""
+        }
+      },
+      {
+        "code": "C2",
+        "type": 10,
+        "displayName": {
+          "mTerm": "MenuShop/ShopItemType/Crystals"
+        },
+        "smallIcon": {
+          "m_AssetGUID": "1eaee2ed6b7e34146a92a2d886660889",
+          "m_SubObjectName": "",
+          "m_SubObjectType": ""
+        },
+        "bigIcon": {
+          "m_AssetGUID": "65ed84b9693e142caa3bf45bda952471",
+          "m_SubObjectName": "",
+          "m_SubObjectType": ""
+        }
+      },
+      {
+        "code": "C3",
+        "type": 20,
+        "displayName": {
+          "mTerm": "MenuShop/ShopItemType/Blackstone"
+        },
+        "smallIcon": {
+          "m_AssetGUID": "e7af3237ed78b3c44a4ad914a7bafc8d",
+          "m_SubObjectName": "",
+          "m_SubObjectType": ""
+        },
+        "bigIcon": {
+          "m_AssetGUID": "e70ffaeb2b6324bfda7d25e7608a908e",
+          "m_SubObjectName": "",
+          "m_SubObjectType": ""
+        }
+      },
+      {
+        "code": "RM",
+        "type": 30,
+        "displayName": {
+          "mTerm": "RealMoney"
+        },
+        "smallIcon": {
+          "guid": "",
+          "m_AssetGUID": "",
+          "m_SubObjectName": ""
+        },
+        "bigIcon": {
+          "guid": "",
+          "m_AssetGUID": "",
+          "m_SubObjectName": ""
+        }
+      },
+      {
+        "code": "FR",
+        "type": 40,
+        "displayName": {
+          "mTerm": "Free"
+        },
+        "smallIcon": {
+          "guid": "",
+          "m_AssetGUID": "",
+          "m_SubObjectName": ""
+        },
+        "bigIcon": {
+          "guid": "",
+          "m_AssetGUID": "",
+          "m_SubObjectName": ""
+        }
+      },
+      {
+        "code": "UN",
+        "type": 50,
+        "displayName": {
+          "mTerm": "Unavailable"
+        },
+        "smallIcon": {
+          "guid": "",
+          "m_AssetGUID": "",
+          "m_SubObjectName": ""
+        },
+        "bigIcon": {
+          "guid": "",
+          "m_AssetGUID": "",
+          "m_SubObjectName": ""
+        }
+      },
+      {
+        "code": "RD",
+        "type": 60,
+        "displayName": {
+          "mTerm": "RaidMedals"
+        },
+        "smallIcon": {
+          "guid": "",
+          "m_AssetGUID": "",
+          "m_SubObjectName": ""
+        },
+        "bigIcon": {
+          "guid": "",
+          "m_AssetGUID": "",
+          "m_SubObjectName": ""
+        }
+      },
+      {
+        "code": "C5",
+        "type": 70,
+        "displayName": {
+          "mTerm": "MenuShop/ShopItemType/GachaTicket"
+        },
+        "smallIcon": {
+          "m_AssetGUID": "a6372675b606846798904ab2a1b63a13",
+          "m_SubObjectName": "",
+          "m_SubObjectType": ""
+        },
+        "bigIcon": {
+          "m_AssetGUID": "024f9d0226abf40de8d3902412da08b2",
+          "m_SubObjectName": "",
+          "m_SubObjectType": ""
+        }
+      },
+      {
+        "code": "CP",
+        "type": 71,
+        "displayName": {
+          "mTerm": "CampaignPoints"
+        },
+        "smallIcon": {
+          "guid": "",
+          "m_AssetGUID": "",
+          "m_SubObjectName": ""
+        },
+        "bigIcon": {
+          "guid": "",
+          "m_AssetGUID": "",
+          "m_SubObjectName": ""
+        }
+      },
+      {
+        "code": "EN",
+        "type": 72,
+        "displayName": {
+          "mTerm": "Energy"
+        },
+        "smallIcon": {
+          "guid": "",
+          "m_AssetGUID": "",
+          "m_SubObjectName": ""
+        },
+        "bigIcon": {
+          "guid": "",
+          "m_AssetGUID": "",
+          "m_SubObjectName": ""
+        }
+      }
+    ],
+    "waprforgeToLegionsUSDFactor": 0,
+    "maxConvertedGold": 0,
+    "warpforgeToLegionsExtraGold": 0,
+    "useCurrencyConversionToLegions": false
+  },
+  "PointsConfig": {
+    "points": [
+      {
+        "$type": "CampaignPoints, Assembly-CSharp",
+        "Id": "campaignPoints",
+        "pointNameKey": {
+          "mTerm": "CampaignPoints"
+        },
+        "smallIcon": {
+          "guid": "",
+          "m_AssetGUID": "",
+          "m_SubObjectName": ""
+        },
+        "bigIcon": {
+          "guid": "",
+          "m_AssetGUID": "",
+          "m_SubObjectName": ""
+        },
+        "maxAmount": 999999
+      }
+    ]
+  },
+  "AIBotsConfig": {
+    "BotList": [
+      {
+        "botDecks": [
+          {
+            "targetId": "BlackLegionDeck2"
+          },
+          {
+            "targetId": "EmperorsChildrenDeck5"
+          },
+          {
+            "targetId": "DarkAngelsDeck5"
+          },
+          {
+            "targetId": "SpaceWolvesDeck3"
+          },
+          {
+            "targetId": "SautekhDeck2"
+          },
+          {
+            "targetId": "DarkAngelsDeck1"
+          },
+          {
+            "targetId": "OrksDeck7"
+          },
+          {
+            "targetId": "AeldariDeck4"
+          },
+          {
+            "targetId": "TauEmpireDeck7"
+          },
+          {
+            "targetId": "UMDeck6"
+          },
+          {
+            "targetId": "GenestealersDeck5"
+          },
+          {
+            "targetId": "UMDeck5"
+          },
+          {
+            "targetId": "BlackLegionDeck3"
+          },
+          {
+            "targetId": "SautekhDeck7"
+          },
+          {
+            "targetId": "EmperorsChildrenDeck1"
+          },
+          {
+            "targetId": "SororitasDeck5"
+          },
+          {
+            "targetId": "BlackLegionDeck1"
+          },
+          {
+            "targetId": "GenestealersDeck4"
+          },
+          {
+            "targetId": "TauEmpireDeck2"
+          },
+          {
+            "targetId": "TauEmpireDeck6"
+          },
+          {
+            "targetId": "SautekhDeck1"
+          },
+          {
+            "targetId": "LEV_Vardenghast"
+          },
+          {
+            "targetId": "BlackLegionDeck6"
+          },
+          {
+            "targetId": "AeldariDeck1"
+          },
+          {
+            "targetId": "LeviathanDeck1"
+          },
+          {
+            "targetId": "SororitasDeck4"
+          },
+          {
+            "targetId": "DarkAngelsDeck7"
+          },
+          {
+            "targetId": "SpaceWolvesDeck5"
+          },
+          {
+            "targetId": "TauEmpireDeck3"
+          },
+          {
+            "targetId": "Deck_UM_Titus"
+          },
+          {
+            "targetId": "AstraMilitarumDeck3"
+          },
+          {
+            "targetId": "DarkAngelsDeck3"
+          },
+          {
+            "targetId": "EmperorsChildrenDeck3"
+          },
+          {
+            "targetId": "AeldariDeck6"
+          },
+          {
+            "targetId": "LeviathanDeck3"
+          },
+          {
+            "targetId": "OrksDeck2"
+          },
+          {
+            "targetId": "SpaceWolvesDeck1"
+          },
+          {
+            "targetId": "AstraMilitarumDeck1"
+          },
+          {
+            "targetId": "AstraMilitarumDeck5"
+          },
+          {
+            "targetId": "SororitasDeck1"
+          },
+          {
+            "targetId": "GenestealersDeck2"
+          },
+          {
+            "targetId": "OrksDeck4"
+          },
+          {
+            "targetId": "UMDeck1"
+          },
+          {
+            "targetId": "BlackLegionDeck5"
+          },
+          {
+            "targetId": "SautekhDeck8"
+          },
+          {
+            "targetId": "UMDeck4"
+          },
+          {
+            "targetId": "LeviathanDeck4"
+          },
+          {
+            "targetId": "OrksDeck5"
+          },
+          {
+            "targetId": "AeldariDeck2"
+          }
+        ],
+        "skipChance": 0.0,
+        "minSkips": 0,
+        "maxSkips": 0,
+        "minRank": 0,
+        "maxRank": 1000000,
+        "minLossStreak": 0,
+        "maxLossStreak": 1000000
+      }
+    ],
+    "BotListFastMode": [
+      {
+        "botDecks": [
+          {
+            "targetId": "ASH_SK_2"
+          },
+          {
+            "targetId": "SW_SK_3"
+          },
+          {
+            "targetId": "SAU_SK_4"
+          },
+          {
+            "targetId": "AM_SK_1"
+          },
+          {
+            "targetId": "SAU_SK_3"
+          },
+          {
+            "targetId": "TL_SK_2"
+          },
+          {
+            "targetId": "TL_SK_3"
+          },
+          {
+            "targetId": "EC_SK_2"
+          },
+          {
+            "targetId": "TAU_SK_4"
+          },
+          {
+            "targetId": "AM_SK_3"
+          },
+          {
+            "targetId": "AM_SK_4"
+          },
+          {
+            "targetId": "UM_SK_5"
+          },
+          {
+            "targetId": "GSC_SK_1"
+          },
+          {
+            "targetId": "BL_SK_2"
+          },
+          {
+            "targetId": "GSC_SK_2"
+          },
+          {
+            "targetId": "SOR_SK_1"
+          },
+          {
+            "targetId": "ASH_SK_3"
+          },
+          {
+            "targetId": "DA_SK_4"
+          },
+          {
+            "targetId": "AM_SK_2"
+          },
+          {
+            "targetId": "SOR_SK_2"
+          },
+          {
+            "targetId": "TAU_SK_1"
+          },
+          {
+            "targetId": "ORK_SK_3"
+          },
+          {
+            "targetId": "ORK_SK_6"
+          },
+          {
+            "targetId": "GSC_SK_3"
+          },
+          {
+            "targetId": "TL_SK_1"
+          },
+          {
+            "targetId": "SW_SK_1"
+          },
+          {
+            "targetId": "EC_SK_1"
+          },
+          {
+            "targetId": "SAU_SK_1"
+          },
+          {
+            "targetId": "ASH_SK_4"
+          },
+          {
+            "targetId": "BL_SK_3"
+          },
+          {
+            "targetId": "UM_SK_3"
+          },
+          {
+            "targetId": "DA_SK_1"
+          },
+          {
+            "targetId": "UM_SK_2"
+          },
+          {
+            "targetId": "ORK_SK_5"
+          },
+          {
+            "targetId": "SOR_SK_3"
+          },
+          {
+            "targetId": "TAU_SK_2"
+          },
+          {
+            "targetId": "TAU_SK_3"
+          },
+          {
+            "targetId": "ORK_SK_4"
+          },
+          {
+            "targetId": "GSC_SK_4"
+          },
+          {
+            "targetId": "DA_SK_3"
+          },
+          {
+            "targetId": "ORK_SK_1"
+          },
+          {
+            "targetId": "UM_SK_1"
+          },
+          {
+            "targetId": "SAU_SK_2"
+          },
+          {
+            "targetId": "BL_SK_1"
+          },
+          {
+            "targetId": "SW_SK_2"
+          },
+          {
+            "targetId": "ASH_SK_5"
+          },
+          {
+            "targetId": "TL_SK_4"
+          },
+          {
+            "targetId": "ORK_SK_2"
+          },
+          {
+            "targetId": "BL_SK_4"
+          },
+          {
+            "targetId": "UM_SK_4"
+          },
+          {
+            "targetId": "ASH_SK_1"
+          },
+          {
+            "targetId": "EC_SK_3"
+          },
+          {
+            "targetId": "DA_SK_2"
+          },
+          {
+            "targetId": "SOR_SK_4"
+          }
+        ],
+        "skipChance": 0.0,
+        "minSkips": 0,
+        "maxSkips": 0,
+        "minRank": 0,
+        "maxRank": 1000000,
+        "minLossStreak": 0,
+        "maxLossStreak": 1000000
+      }
+    ],
+    "BotListFTUE": [
+      {
+        "botDecks": [
+          {
+            "targetId": "ASH_SK_2"
+          },
+          {
+            "targetId": "SW_SK_3"
+          },
+          {
+            "targetId": "SAU_SK_4"
+          },
+          {
+            "targetId": "AM_SK_1"
+          },
+          {
+            "targetId": "SAU_SK_3"
+          },
+          {
+            "targetId": "TL_SK_2"
+          },
+          {
+            "targetId": "TL_SK_3"
+          },
+          {
+            "targetId": "EC_SK_2"
+          },
+          {
+            "targetId": "TAU_SK_4"
+          },
+          {
+            "targetId": "AM_SK_3"
+          },
+          {
+            "targetId": "AM_SK_4"
+          },
+          {
+            "targetId": "UM_SK_5"
+          },
+          {
+            "targetId": "GSC_SK_1"
+          },
+          {
+            "targetId": "BL_SK_2"
+          },
+          {
+            "targetId": "GSC_SK_2"
+          },
+          {
+            "targetId": "SOR_SK_1"
+          },
+          {
+            "targetId": "ASH_SK_3"
+          },
+          {
+            "targetId": "DA_SK_4"
+          },
+          {
+            "targetId": "AM_SK_2"
+          },
+          {
+            "targetId": "SOR_SK_2"
+          },
+          {
+            "targetId": "TAU_SK_1"
+          },
+          {
+            "targetId": "ORK_SK_3"
+          },
+          {
+            "targetId": "ORK_SK_6"
+          },
+          {
+            "targetId": "GSC_SK_3"
+          },
+          {
+            "targetId": "TL_SK_1"
+          },
+          {
+            "targetId": "SW_SK_1"
+          },
+          {
+            "targetId": "EC_SK_1"
+          },
+          {
+            "targetId": "SAU_SK_1"
+          },
+          {
+            "targetId": "ASH_SK_4"
+          },
+          {
+            "targetId": "BL_SK_3"
+          },
+          {
+            "targetId": "UM_SK_3"
+          },
+          {
+            "targetId": "DA_SK_1"
+          },
+          {
+            "targetId": "UM_SK_2"
+          },
+          {
+            "targetId": "ORK_SK_5"
+          },
+          {
+            "targetId": "SOR_SK_3"
+          },
+          {
+            "targetId": "TAU_SK_2"
+          },
+          {
+            "targetId": "TAU_SK_3"
+          },
+          {
+            "targetId": "ORK_SK_4"
+          },
+          {
+            "targetId": "GSC_SK_4"
+          },
+          {
+            "targetId": "DA_SK_3"
+          },
+          {
+            "targetId": "ORK_SK_1"
+          },
+          {
+            "targetId": "UM_SK_1"
+          },
+          {
+            "targetId": "SAU_SK_2"
+          },
+          {
+            "targetId": "BL_SK_1"
+          },
+          {
+            "targetId": "SW_SK_2"
+          },
+          {
+            "targetId": "ASH_SK_5"
+          },
+          {
+            "targetId": "TL_SK_4"
+          },
+          {
+            "targetId": "ORK_SK_2"
+          },
+          {
+            "targetId": "BL_SK_4"
+          },
+          {
+            "targetId": "UM_SK_4"
+          },
+          {
+            "targetId": "ASH_SK_1"
+          },
+          {
+            "targetId": "EC_SK_3"
+          },
+          {
+            "targetId": "DA_SK_2"
+          },
+          {
+            "targetId": "SOR_SK_4"
+          }
+        ],
+        "skipChance": 0.0,
+        "minSkips": 0,
+        "maxSkips": 0,
+        "minRank": 0,
+        "maxRank": 1000000,
+        "minLossStreak": 0,
+        "maxLossStreak": 1000000,
+        "winCount": 0,
+        "waitTime": 1.0,
+        "justForRanked": false,
+        "shouldUseFirstGameLogic": false
+      }
+    ],
+    "botNames": [
+      "Brother Varro",
+      "Kaptin Gruzz",
+      "Archon Vyle",
+      "Shas'ui Teyn",
+      "Sister Helena",
+      "Overlord Khepra",
+      "Commissar Rourke",
+      "Farseer Iyanna"
+    ],
+    "whitelistAvatars": [],
+    "whitelistTitles": [],
+    "whitelistCardbacks": [],
+    "CardLevelConfig": {
+      "card_level_rank_offset": 0.0,
+      "card_level_rank_scaling_ref": 1.0,
+      "k_factor": 0.0,
+      "card_level_2_chance": 0.0,
+      "card_level_3_chance": 0.0,
+      "card_level_4_chance": 0.0,
+      "card_level_4_min_rank": 1000000.0
+    },
+    "EmotesConfig": {
+      "emote_chance_after_action": 0.0,
+      "reply_chance": 0.0,
+      "min_reply_delay": 1.0,
+      "max_reply_delay": 2.0
+    },
+    "PlayBehaviourConfig": {
+      "min_first_action_delay": 1.0,
+      "max_first_action_delay": 2.0,
+      "min_action_delay": 0.5,
+      "max_action_delay": 1.5,
+      "min_end_turn_delay": 0.5,
+      "max_end_turn_delay": 1.0
+    },
+    "disableFTUE": true
+  }
+}

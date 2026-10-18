@@ -1,0 +1,529 @@
+{
+  "SharedData": {
+    "Classic": {
+      "previousLeaderboard": "",
+      "lastPlayedSeason": 1,
+      "lastPlayedEvent": "",
+      "HighestPosition": {
+        "Position": 0,
+        "Rating": 0,
+        "Season": 1
+      },
+      "SeasonPositions": {},
+      "isHuman": false,
+      "highestScoreSeason": 0,
+      "lossStreak": 0
+    },
+    "Ranked": {
+      "previousLeaderboard": "",
+      "lastPlayedSeason": 1,
+      "lastPlayedEvent": "",
+      "HighestPosition": {
+        "Position": 0,
+        "Rating": 0,
+        "Season": 1
+      },
+      "SeasonPositions": {},
+      "isHuman": false,
+      "highestScoreSeason": 0,
+      "lossStreak": 0
+    },
+    "FastMode": {
+      "previousLeaderboard": "",
+      "lastPlayedSeason": 1,
+      "lastPlayedEvent": "",
+      "HighestPosition": {
+        "Position": 0,
+        "Rating": 0,
+        "Season": 1
+      },
+      "SeasonPositions": {},
+      "isHuman": false,
+      "highestScoreSeason": 0,
+      "lossStreak": 0
+    },
+    "ResultCounter": {
+      "Classic": {
+        "Won": 0,
+        "Loss": 0,
+        "Draw": 0
+      },
+      "Duel": {
+        "Won": 0,
+        "Loss": 0,
+        "Draw": 0
+      },
+      "PracticeLodge": {
+        "Won": 0,
+        "Loss": 0,
+        "Draw": 0
+      },
+      "Dungeon": {
+        "Won": 0,
+        "Loss": 0,
+        "Draw": 0
+      },
+      "Tutorial": {
+        "Won": 0,
+        "Loss": 0,
+        "Draw": 0
+      },
+      "CutScene": {
+        "Won": 0,
+        "Loss": 0,
+        "Draw": 0
+      },
+      "OfflinePractice": {
+        "Won": 0,
+        "Loss": 0,
+        "Draw": 0
+      },
+      "ClosedDeck": {
+        "Won": 0,
+        "Loss": 0,
+        "Draw": 0
+      },
+      "Campaign": {
+        "Won": 0,
+        "Loss": 0,
+        "Draw": 0
+      },
+      "TutorialReplay": {
+        "Won": 0,
+        "Loss": 0,
+        "Draw": 0
+      },
+      "Replay": {
+        "Won": 0,
+        "Loss": 0,
+        "Draw": 0
+      },
+      "RankedFriendly": {
+        "Won": 0,
+        "Loss": 0,
+        "Draw": 0
+      },
+      "OwnDeckTraining": {
+        "Won": 0,
+        "Loss": 0,
+        "Draw": 0
+      },
+      "Skirmish": {
+        "Won": 0,
+        "Loss": 0,
+        "Draw": 0
+      },
+      "Battle4Warpforge": {
+        "Won": 0,
+        "Loss": 0,
+        "Draw": 0
+      }
+    }
+  },
+  "RawEvents": [
+    {
+      "Data": {
+        "$type": "Everguild.LiveOps.RankedV3Data, Assembly-CSharp",
+        "eventId": "ranked_v3",
+        "enabled": true,
+        "activationType": 0,
+        "dates": {
+          "startDate": 0,
+          "endDate": 4102444800000,
+          "previewable": false,
+          "previewDate": 0,
+          "expirable": false,
+          "expireDate": 4102444800000,
+          "eventStages": []
+        },
+        "filter": {
+          "army": 0,
+          "expansion": 0,
+          "hasDuration": false,
+          "eventDuration": 0,
+          "hasCooldown": false,
+          "eventCooldown": 0,
+          "eventGroups": []
+        },
+        "priority": 0,
+        "showInMainMenu": true,
+        "location": {
+          "type": 0
+        },
+        "drawData": {
+          "EventAssets": [],
+          "EventComponents": [
+            {
+              "key": 35,
+              "value": {
+                "m_AssetGUID": "b632b2a333bb4423386f2530cbc9dacc",
+                "m_SubObjectName": "",
+                "m_SubObjectType": ""
+              }
+            },
+            {
+              "key": 10,
+              "value": {
+                "m_AssetGUID": "769b53202b2cc471db62926328a5f3db",
+                "m_SubObjectName": "",
+                "m_SubObjectType": ""
+              }
+            }
+          ],
+          "EventLabels": []
+        },
+        "admisionPrices": [],
+        "skullsRewards": [],
+        "gameplayVariables": {
+          "maxLegendaries": 5,
+          "numberOfCopiesOtherRarities": 2,
+          "numberOfCopiesLegendary": 1,
+          "slotsPerSide": 4,
+          "warlordLifeChange": 0,
+          "deckSize": 30,
+          "overtimeTurn": 13,
+          "startingMana": 1,
+          "startingManaSecond": 1,
+          "addedManaSecond": 0,
+          "manaPerTurn": 1,
+          "drawCardsPerTurn": 1,
+          "manaAccumulation": 10,
+          "handLimit": 10,
+          "shouldReshuffle": false,
+          "showMulligan": true,
+          "assignDefensiveCardsInEditMode": false,
+          "alternativeTraitLogic": false
+        },
+        "seasonNumber": 1,
+        "leaderboard": "RankedV3",
+        "legendaryElo": 2000,
+        "maxEloCap": 5000,
+        "ratingDifferenceForMatchMaking": [
+          100,
+          200,
+          400,
+          800
+        ],
+        "rewardsPerTier": [],
+        "rewardsPerPosition": [],
+        "lossShieldCount": 0,
+        "boostedFactions": [],
+        "boostedFactionCount": 0,
+        "boostedFactionBonus": 0,
+        "defaultFactionBoostCount": 0,
+        "defaultFactionBoostBonus": 0
+      },
+      "Persistence": {
+        "$type": "Everguild.LiveOps.RankedV3Save, Assembly-CSharp",
+        "eventId": "ranked_v3",
+        "IsNew": false,
+        "WasSeen": true,
+        "IsActive": true,
+        "triggerTime": 0,
+        "expiredTime": 0,
+        "joinState": 1,
+        "defaultDeckId": "",
+        "randomSeed": 0,
+        "matchStarted": false,
+        "currentRating": 1000,
+        "armyStats": {},
+        "currentStreak": 0
+      }
+    },
+    {
+      "Data": {
+        "$type": "FastModeData, Assembly-CSharp",
+        "eventId": "skirmish",
+        "enabled": true,
+        "activationType": 0,
+        "dates": {
+          "startDate": 0,
+          "endDate": 4102444800000,
+          "previewable": false,
+          "previewDate": 0,
+          "expirable": false,
+          "expireDate": 4102444800000,
+          "eventStages": []
+        },
+        "filter": {
+          "army": 0,
+          "expansion": 0,
+          "hasDuration": false,
+          "eventDuration": 0,
+          "hasCooldown": false,
+          "eventCooldown": 0,
+          "eventGroups": []
+        },
+        "priority": 1,
+        "showInMainMenu": true,
+        "location": {
+          "type": 0
+        },
+        "drawData": {
+          "EventAssets": [],
+          "EventComponents": [
+            {
+              "key": 35,
+              "value": {
+                "m_AssetGUID": "2d7ed856cda8d447e8fe35acb866d214",
+                "m_SubObjectName": "",
+                "m_SubObjectType": ""
+              }
+            },
+            {
+              "key": 10,
+              "value": {
+                "m_AssetGUID": "d424a0e2836e04cd8b53a1da98400edc",
+                "m_SubObjectName": "",
+                "m_SubObjectType": ""
+              }
+            }
+          ],
+          "EventLabels": []
+        },
+        "admisionPrices": [],
+        "skullsRewards": [],
+        "gameplayVariables": {
+          "maxLegendaries": 3,
+          "numberOfCopiesOtherRarities": 2,
+          "numberOfCopiesLegendary": 1,
+          "slotsPerSide": 4,
+          "warlordLifeChange": 0,
+          "deckSize": 12,
+          "overtimeTurn": 13,
+          "startingMana": 1,
+          "startingManaSecond": 1,
+          "addedManaSecond": 0,
+          "manaPerTurn": 1,
+          "drawCardsPerTurn": 1,
+          "manaAccumulation": 10,
+          "handLimit": 10,
+          "shouldReshuffle": false,
+          "showMulligan": true,
+          "assignDefensiveCardsInEditMode": false,
+          "alternativeTraitLogic": false
+        },
+        "leaderboard": "Skirmish",
+        "rewardsPerTier": [],
+        "ratingDifferenceForMatchMaking": [
+          100,
+          200,
+          400,
+          800
+        ],
+        "maxEloCap": 5000
+      },
+      "Persistence": {
+        "$type": "FastModeSave, Assembly-CSharp",
+        "eventId": "skirmish",
+        "IsNew": false,
+        "WasSeen": true,
+        "IsActive": true,
+        "triggerTime": 0,
+        "expiredTime": 0,
+        "joinState": 1,
+        "defaultDeckId": "",
+        "randomSeed": 0,
+        "matchStarted": false,
+        "currentRating": 1000,
+        "armyStats": {},
+        "collectedRewards": 0
+      }
+    },
+    {
+      "Data": {
+        "$type": "Everguild.LiveOps.PracticeEventData, Assembly-CSharp",
+        "eventId": "PracticeEvent",
+        "enabled": true,
+        "activationType": 0,
+        "dates": {
+          "startDate": 0,
+          "endDate": 4102444800000,
+          "previewable": false,
+          "previewDate": 0,
+          "expirable": false,
+          "expireDate": 4102444800000,
+          "eventStages": []
+        },
+        "filter": {
+          "army": 0,
+          "expansion": 0,
+          "hasDuration": false,
+          "eventDuration": 0,
+          "hasCooldown": false,
+          "eventCooldown": 0,
+          "eventGroups": []
+        },
+        "priority": 2,
+        "showInMainMenu": true,
+        "location": {
+          "type": 0
+        },
+        "drawData": {
+          "EventAssets": [],
+          "EventComponents": [
+            {
+              "key": 35,
+              "value": {
+                "m_AssetGUID": "60c4a88ccb2534644afc6e6ede2c450b",
+                "m_SubObjectName": "",
+                "m_SubObjectType": ""
+              }
+            },
+            {
+              "key": 10,
+              "value": {
+                "m_AssetGUID": "c2552d81d453043359dd4283c66fa456",
+                "m_SubObjectName": "",
+                "m_SubObjectType": ""
+              }
+            }
+          ],
+          "EventLabels": []
+        },
+        "admisionPrices": [],
+        "skullsRewards": [],
+        "gameplayVariables": {
+          "maxLegendaries": 5,
+          "numberOfCopiesOtherRarities": 2,
+          "numberOfCopiesLegendary": 1,
+          "slotsPerSide": 4,
+          "warlordLifeChange": 0,
+          "deckSize": 30,
+          "overtimeTurn": 13,
+          "startingMana": 1,
+          "startingManaSecond": 1,
+          "addedManaSecond": 0,
+          "manaPerTurn": 1,
+          "drawCardsPerTurn": 1,
+          "manaAccumulation": 10,
+          "handLimit": 10,
+          "shouldReshuffle": false,
+          "showMulligan": true,
+          "assignDefensiveCardsInEditMode": false,
+          "alternativeTraitLogic": false
+        },
+        "EnemyDeckAddressableIds": [
+          "ASH_SK_2",
+          "BlackLegionDeck2",
+          "SW_SK_3",
+          "EmperorsChildrenDeck5",
+          "DarkAngelsDeck5",
+          "SAU_SK_4",
+          "SpaceWolvesDeck3",
+          "SautekhDeck2",
+          "DarkAngelsDeck1",
+          "AM_SK_1",
+          "OrksDeck7",
+          "AeldariDeck4",
+          "TauEmpireDeck7",
+          "UMDeck6",
+          "SAU_SK_3",
+          "TL_SK_2",
+          "GenestealersDeck5",
+          "TL_SK_3",
+          "EC_SK_2",
+          "TAU_SK_4",
+          "UMDeck5",
+          "BlackLegionDeck3",
+          "SautekhDeck7",
+          "EmperorsChildrenDeck1",
+          "SororitasDeck5",
+          "AM_SK_3",
+          "AM_SK_4",
+          "BlackLegionDeck1",
+          "GenestealersDeck4",
+          "UM_SK_5",
+          "GSC_SK_1",
+          "BL_SK_2",
+          "GSC_SK_2",
+          "SOR_SK_1",
+          "TauEmpireDeck2",
+          "TauEmpireDeck6",
+          "ASH_SK_3",
+          "DA_SK_4",
+          "AM_SK_2",
+          "SautekhDeck1",
+          "SOR_SK_2",
+          "LEV_Vardenghast",
+          "TAU_SK_1",
+          "BlackLegionDeck6",
+          "ORK_SK_3",
+          "ORK_SK_6",
+          "GSC_SK_3",
+          "TL_SK_1",
+          "AeldariDeck1",
+          "LeviathanDeck1",
+          "SW_SK_1",
+          "SororitasDeck4",
+          "EC_SK_1",
+          "SAU_SK_1",
+          "ASH_SK_4",
+          "BL_SK_3",
+          "DarkAngelsDeck7",
+          "UM_SK_3",
+          "SpaceWolvesDeck5",
+          "TauEmpireDeck3",
+          "DA_SK_1",
+          "UM_SK_2",
+          "Deck_UM_Titus",
+          "ORK_SK_5",
+          "SOR_SK_3",
+          "AstraMilitarumDeck3",
+          "DarkAngelsDeck3",
+          "TAU_SK_2",
+          "EmperorsChildrenDeck3",
+          "AeldariDeck6",
+          "TAU_SK_3",
+          "ORK_SK_4",
+          "GSC_SK_4",
+          "DA_SK_3",
+          "LeviathanDeck3",
+          "OrksDeck2",
+          "ORK_SK_1",
+          "UM_SK_1",
+          "SpaceWolvesDeck1",
+          "AstraMilitarumDeck1",
+          "SAU_SK_2",
+          "BL_SK_1",
+          "SW_SK_2",
+          "AstraMilitarumDeck5",
+          "ASH_SK_5",
+          "TL_SK_4",
+          "SororitasDeck1",
+          "GenestealersDeck2",
+          "ORK_SK_2",
+          "BL_SK_4",
+          "UM_SK_4",
+          "ASH_SK_1",
+          "OrksDeck4",
+          "EC_SK_3",
+          "UMDeck1",
+          "DA_SK_2",
+          "BlackLegionDeck5",
+          "SautekhDeck8",
+          "UMDeck4",
+          "SOR_SK_4",
+          "LeviathanDeck4",
+          "OrksDeck5",
+          "AeldariDeck2"
+        ]
+      },
+      "Persistence": {
+        "$type": "Everguild.LiveOps.PracticeEventSaveGame, Assembly-CSharp",
+        "eventId": "PracticeEvent",
+        "IsNew": false,
+        "WasSeen": true,
+        "IsActive": true,
+        "triggerTime": 0,
+        "expiredTime": 0,
+        "joinState": 1,
+        "defaultDeckId": "",
+        "randomSeed": 0,
+        "matchStarted": false,
+        "currentRating": 1000,
+        "armyStats": {}
+      }
+    }
+  ]
+}
